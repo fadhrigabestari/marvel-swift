@@ -8,5 +8,6 @@
 
 import Foundation
 
-print("Hello, World!")
+let character: Character = HumanCharacter(name: "Fadhriga", description: "Intern @GOJEK")
 
+character.status()
