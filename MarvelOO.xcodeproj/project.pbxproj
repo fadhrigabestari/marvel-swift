@@ -20,6 +20,8 @@
 		0F37737222BCCA0F002D7700 /* BasicCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F37737122BCCA0F002D7700 /* BasicCharacter.swift */; };
 		0F37737422BCCAE0002D7700 /* Human.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F37737322BCCAE0002D7700 /* Human.swift */; };
 		0F37737622BCCE40002D7700 /* HumanRadiatedCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F37737522BCCE40002D7700 /* HumanRadiatedCharacter.swift */; };
+		0F37737822BCD1D8002D7700 /* Human+AlienCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F37737722BCD1D8002D7700 /* Human+AlienCharacter.swift */; };
+		0F37737A22BCD6EA002D7700 /* Beast+AlienCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F37737922BCD6EA002D7700 /* Beast+AlienCharacter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +51,8 @@
 		0F37737122BCCA0F002D7700 /* BasicCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCharacter.swift; sourceTree = "<group>"; };
 		0F37737322BCCAE0002D7700 /* Human.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Human.swift; sourceTree = "<group>"; };
 		0F37737522BCCE40002D7700 /* HumanRadiatedCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanRadiatedCharacter.swift; sourceTree = "<group>"; };
+		0F37737722BCD1D8002D7700 /* Human+AlienCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Human+AlienCharacter.swift"; sourceTree = "<group>"; };
+		0F37737922BCD6EA002D7700 /* Beast+AlienCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Beast+AlienCharacter.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,8 @@
 				0F37736D22BCC7AD002D7700 /* BeastCharacter.swift */,
 				0F37737122BCCA0F002D7700 /* BasicCharacter.swift */,
 				0F37737522BCCE40002D7700 /* HumanRadiatedCharacter.swift */,
+				0F37737722BCD1D8002D7700 /* Human+AlienCharacter.swift */,
+				0F37737922BCD6EA002D7700 /* Beast+AlienCharacter.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -172,6 +178,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F37736322BCC28F002D7700 /* Describable.swift in Sources */,
+				0F37737822BCD1D8002D7700 /* Human+AlienCharacter.swift in Sources */,
+				0F37737A22BCD6EA002D7700 /* Beast+AlienCharacter.swift in Sources */,
 				0F37737022BCC7F1002D7700 /* Beast.swift in Sources */,
 				0F37736A22BCC626002D7700 /* AlienCharacter.swift in Sources */,
 				0F37735722BCC1AF002D7700 /* main.swift in Sources */,

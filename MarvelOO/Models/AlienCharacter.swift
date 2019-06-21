@@ -20,7 +20,7 @@ class AlienCharacter: BasicCharacter, Alien {
     func alienate() {
         self.health += 50
         self.damage += 5
-        self.abilities.append("Breathe in outerspace")
+        self.abilities.append("Alien")
     }
     
     override func status() {

@@ -20,7 +20,7 @@ class BeastCharacter: BasicCharacter, Beast {
     func beastify() {
         health -= 20
         damage += 20
-        abilities.append("Beast transform")
+        abilities.append("Beast")
     }
     
     override func status() {

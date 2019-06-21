@@ -8,13 +8,17 @@
 
 import Foundation
 
-class HumanCharacter: BasicCharacter {
+class HumanCharacter: BasicCharacter, Human {
     override init(name: String, description: String) {
         super.init(name: name, description: description)
         humanize()
     }
     
     func humanize() {
-        self.abilities.append("Emphatize")
+        self.abilities.append("Human")
+    }
+    
+    override func status() {
+        super.status()
     }
 }

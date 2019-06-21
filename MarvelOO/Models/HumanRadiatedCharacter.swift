@@ -8,18 +8,24 @@
 
 import Foundation
 
-class HumanRadiatedCharacter: HumanCharacter, GammaRadiated {
+class HumanRadiatedCharacter: BasicCharacter, Human, GammaRadiated {
     var radiationLevel: Int
     
     init(name: String, description: String, radiationLevel: Int) {
         self.radiationLevel = radiationLevel
         super.init(name: name, description: description)
         radiate()
+        humanize()
     }
     
     func radiate() {
         self.health += radiationLevel
         self.damage += radiationLevel
+        abilities.append("Gamma radiated")
+    }
+    
+    func humanize() {
+        abilities.append("Semi-human")
     }
     
     override func status() {
