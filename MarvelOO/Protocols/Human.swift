@@ -1,5 +1,5 @@
 //
-//  HumanCharacter.swift
+//  Human.swift
 //  MarvelOO
 //
 //  Created by PT. GOJEK INDONESIA on 21/06/19.
@@ -8,8 +8,6 @@
 
 import Foundation
 
-class HumanCharacter: BasicCharacter {
-    func humanize() {
-        self.abilities.append("Emphatize")
-    }
+protocol Human {
+    func humanize()
 }

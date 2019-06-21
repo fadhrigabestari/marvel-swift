@@ -8,24 +8,18 @@
 
 import Foundation
 
-class AlienCharacter: Character, Alien {
-    var health: Int = 100
-    var damage: Int = 10
-    var abilities: [String] = []
-    var name: String
-    var description: String
+class AlienCharacter: BasicCharacter, Alien {
     var origin: String
     
     init(name: String, description: String, origin: String) {
-        self.name = name
-        self.description = description
         self.origin = origin
+        super.init(name: name, description: description)
         alienate()
     }
     
     func alienate() {
-        health += 50
-        damage += 5
-        abilities.append("Breathe in outerspace")
+        self.health += 50
+        self.damage += 5
+        self.abilities.append("Breathe in outerspace")
     }
 }

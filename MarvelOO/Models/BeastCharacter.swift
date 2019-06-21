@@ -8,18 +8,12 @@
 
 import Foundation
 
-class BeastCharacter: Character, Beast {
-    var health: Int = 100
-    var damage: Int = 10
-    var abilities: [String] = []
-    var name: String
-    var description: String
+class BeastCharacter: BasicCharacter, Beast {
     var species: String
     
     init(name: String, description: String, species: String) {
-        self.name = name
-        self.description = description
         self.species = species
+        super.init(name: name, description: description)
         beastify()
     }
     

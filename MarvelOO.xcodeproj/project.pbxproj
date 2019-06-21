@@ -17,6 +17,8 @@
 		0F37736C22BCC660002D7700 /* Alien.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F37736B22BCC660002D7700 /* Alien.swift */; };
 		0F37736E22BCC7AD002D7700 /* BeastCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F37736D22BCC7AD002D7700 /* BeastCharacter.swift */; };
 		0F37737022BCC7F1002D7700 /* Beast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F37736F22BCC7F1002D7700 /* Beast.swift */; };
+		0F37737222BCCA0F002D7700 /* BasicCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F37737122BCCA0F002D7700 /* BasicCharacter.swift */; };
+		0F37737422BCCAE0002D7700 /* Human.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F37737322BCCAE0002D7700 /* Human.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +45,8 @@
 		0F37736B22BCC660002D7700 /* Alien.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alien.swift; sourceTree = "<group>"; };
 		0F37736D22BCC7AD002D7700 /* BeastCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeastCharacter.swift; sourceTree = "<group>"; };
 		0F37736F22BCC7F1002D7700 /* Beast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beast.swift; sourceTree = "<group>"; };
+		0F37737122BCCA0F002D7700 /* BasicCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCharacter.swift; sourceTree = "<group>"; };
+		0F37737322BCCAE0002D7700 /* Human.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Human.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,7 @@
 				0F37736422BCC493002D7700 /* GammaRadiated.swift */,
 				0F37736B22BCC660002D7700 /* Alien.swift */,
 				0F37736F22BCC7F1002D7700 /* Beast.swift */,
+				0F37737322BCCAE0002D7700 /* Human.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -101,6 +106,7 @@
 				0F37736722BCC4DC002D7700 /* HumanCharacter.swift */,
 				0F37736922BCC626002D7700 /* AlienCharacter.swift */,
 				0F37736D22BCC7AD002D7700 /* BeastCharacter.swift */,
+				0F37737122BCCA0F002D7700 /* BasicCharacter.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -167,7 +173,9 @@
 				0F37736A22BCC626002D7700 /* AlienCharacter.swift in Sources */,
 				0F37735722BCC1AF002D7700 /* main.swift in Sources */,
 				0F37736122BCC23F002D7700 /* Named.swift in Sources */,
+				0F37737222BCCA0F002D7700 /* BasicCharacter.swift in Sources */,
 				0F37736822BCC4DC002D7700 /* HumanCharacter.swift in Sources */,
+				0F37737422BCCAE0002D7700 /* Human.swift in Sources */,
 				0F37735F22BCC200002D7700 /* Character.swift in Sources */,
 				0F37736522BCC493002D7700 /* GammaRadiated.swift in Sources */,
 				0F37736C22BCC660002D7700 /* Alien.swift in Sources */,
