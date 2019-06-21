@@ -22,4 +22,9 @@ class BeastCharacter: BasicCharacter, Beast {
         damage += 20
         abilities.append("Beast transform")
     }
+    
+    override func status() {
+        super.status()
+        print("Species: \(species)")
+    }
 }

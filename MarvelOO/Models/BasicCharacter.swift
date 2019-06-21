@@ -19,4 +19,19 @@ class BasicCharacter: Character {
         self.name = name
         self.description = description
     }
+    
+    func status() {
+        printName()
+        printDescription()
+        print("Health: \(health)")
+        print("Damage: \(damage)")
+        print("Ability: ", terminator: "")
+        for index in abilities.indices {
+            if index < abilities.count - 1{
+                print("\(abilities[index]), ", terminator: "")
+            } else {
+                print("\(abilities[index])")
+            }
+        }
+    }
 }

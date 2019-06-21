@@ -22,4 +22,9 @@ class AlienCharacter: BasicCharacter, Alien {
         self.damage += 5
         self.abilities.append("Breathe in outerspace")
     }
+    
+    override func status() {
+        super.status()
+        print("Origin: \(origin)")
+    }
 }
