@@ -18,20 +18,7 @@ protocol Character: class, Named, Describable {
 }
 
 extension Character {
-    func status() {
-        printName()
-        printDescription()
-        print("Health: \(health)")
-        print("Damage: \(damage)")
-        print("Ability: ", terminator: "")
-        for index in abilities.indices {
-            if index < abilities.count - 1{
-                print("\(abilities[index]), ", terminator: "")
-            } else {
-                print("\(abilities[index])")
-            }
-        }
-    }
+    // MARK: Cannot override default implementation of extended functions
     
     func attack(on character: Character) {
         character.health -= damage

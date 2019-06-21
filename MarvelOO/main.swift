@@ -8,6 +8,6 @@
 
 import Foundation
 
-let character: Character = HumanCharacter(name: "Fadhriga", description: "Intern @GOJEK")
+let character: Character = HumanRadiatedCharacter(name: "Fadhriga", description: "tralala", radiationLevel: 30)
 
 character.status()
