@@ -25,7 +25,7 @@ extension Character {
         print("Damage: \(damage)")
         print("Ability: ", terminator: "")
         for index in abilities.indices {
-            if index < abilities.count {
+            if index < abilities.count - 1{
                 print("\(abilities[index]), ", terminator: "")
             } else {
                 print("\(abilities[index])")
