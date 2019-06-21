@@ -13,3 +13,9 @@ protocol Named {
     
     func printName()
 }
+
+extension Named {
+    func printName() {
+        print("Name: \(name)")
+    }
+}

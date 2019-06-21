@@ -13,3 +13,9 @@ protocol Describable {
     
     func printDescription()
 }
+
+extension Describable {
+    func printDescription() {
+        print("Description: ")
+    }
+}
