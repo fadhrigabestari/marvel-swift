@@ -11,3 +11,7 @@ import Foundation
 let character: Character = HumanRadiatedCharacter(name: "Fadhriga", description: "tralala", radiationLevel: 30)
 
 character.status()
+
+let char: Character = HumanAlienCharacter(name: "wiwi", description: "wowo", origin: "Asgard")
+
+char.status()

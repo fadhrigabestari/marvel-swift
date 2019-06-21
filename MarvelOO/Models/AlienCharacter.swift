@@ -18,8 +18,8 @@ class AlienCharacter: BasicCharacter, Alien {
     }
     
     func alienate() {
-        health += 50
-        damage += 5
+        health += ALIEN_HEALTH
+        damage += ALIEN_DAMAGE
         abilities.append("Alien")
     }
     

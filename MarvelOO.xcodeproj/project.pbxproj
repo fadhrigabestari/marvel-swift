@@ -22,6 +22,7 @@
 		0F37737622BCCE40002D7700 /* HumanRadiatedCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F37737522BCCE40002D7700 /* HumanRadiatedCharacter.swift */; };
 		0F37737822BCD1D8002D7700 /* Human+AlienCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F37737722BCD1D8002D7700 /* Human+AlienCharacter.swift */; };
 		0F37737A22BCD6EA002D7700 /* Beast+AlienCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F37737922BCD6EA002D7700 /* Beast+AlienCharacter.swift */; };
+		0F37737C22BCD810002D7700 /* CharacterConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F37737B22BCD810002D7700 /* CharacterConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -53,6 +54,7 @@
 		0F37737522BCCE40002D7700 /* HumanRadiatedCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanRadiatedCharacter.swift; sourceTree = "<group>"; };
 		0F37737722BCD1D8002D7700 /* Human+AlienCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Human+AlienCharacter.swift"; sourceTree = "<group>"; };
 		0F37737922BCD6EA002D7700 /* Beast+AlienCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Beast+AlienCharacter.swift"; sourceTree = "<group>"; };
+		0F37737B22BCD810002D7700 /* CharacterConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				0F37736622BCC4CF002D7700 /* Models */,
 				0F37735D22BCC1B8002D7700 /* Protocols */,
 				0F37735622BCC1AF002D7700 /* main.swift */,
+				0F37737B22BCD810002D7700 /* CharacterConstants.swift */,
 			);
 			path = MarvelOO;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 				0F37737422BCCAE0002D7700 /* Human.swift in Sources */,
 				0F37735F22BCC200002D7700 /* Character.swift in Sources */,
 				0F37736522BCC493002D7700 /* GammaRadiated.swift in Sources */,
+				0F37737C22BCD810002D7700 /* CharacterConstants.swift in Sources */,
 				0F37736C22BCC660002D7700 /* Alien.swift in Sources */,
 				0F37736E22BCC7AD002D7700 /* BeastCharacter.swift in Sources */,
 			);

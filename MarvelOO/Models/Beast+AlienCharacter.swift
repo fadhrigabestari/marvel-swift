@@ -18,14 +18,14 @@ class BeastAlienCharacter: AlienCharacter, Beast {
     }
     
     override func alienate() {
-        health += 25
-        damage += 3
+        health += Int(ALIEN_HEALTH / 2)
+        damage += Int(ALIEN_DAMAGE / 2)
         abilities.append("Half-alien")
     }
     
     func beastify() {
-        health -= 10
-        damage += 10
+        health += Int(BEAST_HEALTH / 2)
+        damage += Int(BEAST_DAMAGE / 2)
         abilities.append("Half-beast")
     }
     

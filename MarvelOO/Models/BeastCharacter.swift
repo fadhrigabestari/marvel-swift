@@ -18,8 +18,8 @@ class BeastCharacter: BasicCharacter, Beast {
     }
     
     func beastify() {
-        health -= 20
-        damage += 20
+        health += BEAST_HEALTH
+        damage += BEAST_DAMAGE
         abilities.append("Beast")
     }
     
