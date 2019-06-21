@@ -34,6 +34,15 @@
 		0F43B54B22BCE8D4001DE138 /* SoloAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F43B54A22BCE8D4001DE138 /* SoloAction.swift */; };
 		0F43B54F22BCE909001DE138 /* DuoAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F43B54E22BCE909001DE138 /* DuoAction.swift */; };
 		0F43B55122BCF1E2001DE138 /* AttackAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F43B55022BCF1E2001DE138 /* AttackAction.swift */; };
+		0F43B55322BCFDD2001DE138 /* CharacterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F43B55222BCFDD2001DE138 /* CharacterFactory.swift */; };
+		0F43B55622BCFF50001DE138 /* HumanCharacterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F43B55522BCFF50001DE138 /* HumanCharacterFactory.swift */; };
+		0F43B55822BCFF75001DE138 /* HumanRadiatedCharacterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F43B55722BCFF75001DE138 /* HumanRadiatedCharacterFactory.swift */; };
+		0F43B55A22BCFF8F001DE138 /* AlienCharacterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F43B55922BCFF8F001DE138 /* AlienCharacterFactory.swift */; };
+		0F43B55C22BCFFB3001DE138 /* BeastCharacterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F43B55B22BCFFB3001DE138 /* BeastCharacterFactory.swift */; };
+		0F43B55E22BCFFC7001DE138 /* HumanAlienCharacterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F43B55D22BCFFC7001DE138 /* HumanAlienCharacterFactory.swift */; };
+		0F43B56022BCFFE5001DE138 /* HumanBeastCharacterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F43B55F22BCFFE5001DE138 /* HumanBeastCharacterFactory.swift */; };
+		0F43B56222BCFFFE001DE138 /* BeastAlienCharacterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F43B56122BCFFFE001DE138 /* BeastAlienCharacterFactory.swift */; };
+		0F43B56422BD001A001DE138 /* BasicCharacterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F43B56322BD001A001DE138 /* BasicCharacterFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -77,6 +86,15 @@
 		0F43B54A22BCE8D4001DE138 /* SoloAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoloAction.swift; sourceTree = "<group>"; };
 		0F43B54E22BCE909001DE138 /* DuoAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuoAction.swift; sourceTree = "<group>"; };
 		0F43B55022BCF1E2001DE138 /* AttackAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttackAction.swift; sourceTree = "<group>"; };
+		0F43B55222BCFDD2001DE138 /* CharacterFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterFactory.swift; sourceTree = "<group>"; };
+		0F43B55522BCFF50001DE138 /* HumanCharacterFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanCharacterFactory.swift; sourceTree = "<group>"; };
+		0F43B55722BCFF75001DE138 /* HumanRadiatedCharacterFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanRadiatedCharacterFactory.swift; sourceTree = "<group>"; };
+		0F43B55922BCFF8F001DE138 /* AlienCharacterFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlienCharacterFactory.swift; sourceTree = "<group>"; };
+		0F43B55B22BCFFB3001DE138 /* BeastCharacterFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeastCharacterFactory.swift; sourceTree = "<group>"; };
+		0F43B55D22BCFFC7001DE138 /* HumanAlienCharacterFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanAlienCharacterFactory.swift; sourceTree = "<group>"; };
+		0F43B55F22BCFFE5001DE138 /* HumanBeastCharacterFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanBeastCharacterFactory.swift; sourceTree = "<group>"; };
+		0F43B56122BCFFFE001DE138 /* BeastAlienCharacterFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeastAlienCharacterFactory.swift; sourceTree = "<group>"; };
+		0F43B56322BD001A001DE138 /* BasicCharacterFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCharacterFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +127,7 @@
 		0F37735522BCC1AF002D7700 /* MarvelOO */ = {
 			isa = PBXGroup;
 			children = (
+				0F43B55422BCFF24001DE138 /* CharacterFactory */,
 				0F37738422BCDCA2002D7700 /* Character */,
 				0F37737F22BCDC83002D7700 /* Handler */,
 				0F37735622BCC1AF002D7700 /* main.swift */,
@@ -188,6 +207,22 @@
 			path = HandlerProtocols;
 			sourceTree = "<group>";
 		};
+		0F43B55422BCFF24001DE138 /* CharacterFactory */ = {
+			isa = PBXGroup;
+			children = (
+				0F43B55222BCFDD2001DE138 /* CharacterFactory.swift */,
+				0F43B55522BCFF50001DE138 /* HumanCharacterFactory.swift */,
+				0F43B55722BCFF75001DE138 /* HumanRadiatedCharacterFactory.swift */,
+				0F43B55922BCFF8F001DE138 /* AlienCharacterFactory.swift */,
+				0F43B55B22BCFFB3001DE138 /* BeastCharacterFactory.swift */,
+				0F43B55D22BCFFC7001DE138 /* HumanAlienCharacterFactory.swift */,
+				0F43B55F22BCFFE5001DE138 /* HumanBeastCharacterFactory.swift */,
+				0F43B56122BCFFFE001DE138 /* BeastAlienCharacterFactory.swift */,
+				0F43B56322BD001A001DE138 /* BasicCharacterFactory.swift */,
+			);
+			path = CharacterFactory;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -245,7 +280,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F43B56022BCFFE5001DE138 /* HumanBeastCharacterFactory.swift in Sources */,
 				0F37736322BCC28F002D7700 /* Describable.swift in Sources */,
+				0F43B56222BCFFFE001DE138 /* BeastAlienCharacterFactory.swift in Sources */,
 				0F43B54122BCE258001DE138 /* Printer.swift in Sources */,
 				0F37737822BCD1D8002D7700 /* Human+AlienCharacter.swift in Sources */,
 				0F37737A22BCD6EA002D7700 /* Beast+AlienCharacter.swift in Sources */,
@@ -255,22 +292,29 @@
 				0F37735722BCC1AF002D7700 /* main.swift in Sources */,
 				0F37737622BCCE40002D7700 /* HumanRadiatedCharacter.swift in Sources */,
 				0F37736122BCC23F002D7700 /* Named.swift in Sources */,
+				0F43B55C22BCFFB3001DE138 /* BeastCharacterFactory.swift in Sources */,
+				0F43B56422BD001A001DE138 /* BasicCharacterFactory.swift in Sources */,
 				0F37737222BCCA0F002D7700 /* BasicCharacter.swift in Sources */,
 				0F37736822BCC4DC002D7700 /* HumanCharacter.swift in Sources */,
 				0F43B54522BCE4D7001DE138 /* Action.swift in Sources */,
 				0F37737422BCCAE0002D7700 /* Human.swift in Sources */,
+				0F43B55322BCFDD2001DE138 /* CharacterFactory.swift in Sources */,
 				0F43B54322BCE2EF001DE138 /* Handler.swift in Sources */,
 				0F43B53F22BCE1E9001DE138 /* InputManager.swift in Sources */,
 				0F37735F22BCC200002D7700 /* Character.swift in Sources */,
 				0F37736522BCC493002D7700 /* GammaRadiated.swift in Sources */,
 				0F37737C22BCD810002D7700 /* CharacterConstants.swift in Sources */,
 				0F37737E22BCDAD8002D7700 /* Human+BeastCharacter.swift in Sources */,
+				0F43B55A22BCFF8F001DE138 /* AlienCharacterFactory.swift in Sources */,
+				0F43B55E22BCFFC7001DE138 /* HumanAlienCharacterFactory.swift in Sources */,
 				0F43B55122BCF1E2001DE138 /* AttackAction.swift in Sources */,
 				0F37736C22BCC660002D7700 /* Alien.swift in Sources */,
+				0F43B55622BCFF50001DE138 /* HumanCharacterFactory.swift in Sources */,
 				0F43B54722BCE666001DE138 /* StatusAction.swift in Sources */,
 				0F43B54F22BCE909001DE138 /* DuoAction.swift in Sources */,
 				0F43B53D22BCE16A001DE138 /* BasicHandler.swift in Sources */,
 				0F43B54B22BCE8D4001DE138 /* SoloAction.swift in Sources */,
+				0F43B55822BCFF75001DE138 /* HumanRadiatedCharacterFactory.swift in Sources */,
 				0F37736E22BCC7AD002D7700 /* BeastCharacter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

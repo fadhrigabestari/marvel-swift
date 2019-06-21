@@ -12,13 +12,13 @@ class BasicHandler: Handler {
     let inputManager: InputManager = InputManager()
     var action: Action = NoAction()
     
-    func handleInputInSetup() -> (Character, Character) {
-        let playerOne: Character
-        let playerTwo: Character
-        
-        
-        return (playerOne: playerOne, playerTwo: playerTwo)
-    }
+//    func handleInputInSetup() -> (Character, Character) {
+//        let playerOne: Character
+//        let playerTwo: Character
+//        
+//        
+//        return (playerOne: playerOne, playerTwo: playerTwo)
+//    }
     
     func handleInputInGame(playerOne: Character, playerTwo: Character, isPlayerOneTurn: Bool) {
         let input = inputManager.getInputString()
