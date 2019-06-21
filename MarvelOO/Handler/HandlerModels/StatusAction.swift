@@ -9,11 +9,9 @@
 import Foundation
 
 struct StatusAction: Action {
+    var printer: Printer = Printer()
+
     func execute(by character: Character) {
-        
-    }
-    
-    func execute(by main: Character, towards opponent: Character) {
-        
+        printer.printStatus(by: character)
     }
 }

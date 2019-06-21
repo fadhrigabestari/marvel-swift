@@ -9,11 +9,9 @@
 import Foundation
 
 struct BasicHandler: Handler {
-    let input: BasicInput = BasicInput()
-    let output: BasicOutput = BasicOutput()
     let action: Action = NoAction()
     
-    func handleInput(character: Character) {
+    func handleInput() {
         
     }
     

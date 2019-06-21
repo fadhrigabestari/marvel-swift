@@ -8,12 +8,10 @@
 
 import Foundation
 
-struct NoAction: Action {
+struct NoAction: SoloAction {
+    var printer: Printer = Printer()
+
     func execute(by character: Character) {
-        
-    }
-    
-    func execute(by main: Character, towards opponent: Character) {
-        
+        printer.printUnknown()
     }    
 }

@@ -9,6 +9,4 @@
 import Foundation
 
 protocol Handler {
-    func handleInput(character: Character)
-    func handleInput(characters: [Character])
 }

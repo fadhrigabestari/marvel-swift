@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct BasicInput: Input {
+struct BasicInput {
     func getInput() -> String {
         let line = readLine()
         if let input = line {

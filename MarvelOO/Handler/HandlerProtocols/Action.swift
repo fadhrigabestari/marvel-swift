@@ -9,6 +9,8 @@
 import Foundation
 
 protocol Action {
+    var printer: Printer {get set}
+    
     static func determineAction(action: String) -> Action
 }
 
@@ -17,6 +19,8 @@ extension Action {
         switch action {
         case "status":
             return StatusAction()
+        case "attack":
+            return AttackAction()
         default:
             return NoAction()
         }
