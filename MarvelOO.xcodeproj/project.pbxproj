@@ -25,7 +25,7 @@
 		0F37737C22BCD810002D7700 /* CharacterConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F37737B22BCD810002D7700 /* CharacterConstants.swift */; };
 		0F37737E22BCDAD8002D7700 /* Human+BeastCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F37737D22BCDAD8002D7700 /* Human+BeastCharacter.swift */; };
 		0F43B53D22BCE16A001DE138 /* BasicHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F43B53C22BCE16A001DE138 /* BasicHandler.swift */; };
-		0F43B53F22BCE1E9001DE138 /* BasicInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F43B53E22BCE1E9001DE138 /* BasicInput.swift */; };
+		0F43B53F22BCE1E9001DE138 /* InputManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F43B53E22BCE1E9001DE138 /* InputManager.swift */; };
 		0F43B54122BCE258001DE138 /* Printer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F43B54022BCE258001DE138 /* Printer.swift */; };
 		0F43B54322BCE2EF001DE138 /* Handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F43B54222BCE2EF001DE138 /* Handler.swift */; };
 		0F43B54522BCE4D7001DE138 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F43B54422BCE4D7001DE138 /* Action.swift */; };
@@ -68,7 +68,7 @@
 		0F37737B22BCD810002D7700 /* CharacterConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterConstants.swift; sourceTree = "<group>"; };
 		0F37737D22BCDAD8002D7700 /* Human+BeastCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Human+BeastCharacter.swift"; sourceTree = "<group>"; };
 		0F43B53C22BCE16A001DE138 /* BasicHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicHandler.swift; sourceTree = "<group>"; };
-		0F43B53E22BCE1E9001DE138 /* BasicInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicInput.swift; sourceTree = "<group>"; };
+		0F43B53E22BCE1E9001DE138 /* InputManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputManager.swift; sourceTree = "<group>"; };
 		0F43B54022BCE258001DE138 /* Printer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Printer.swift; sourceTree = "<group>"; };
 		0F43B54222BCE2EF001DE138 /* Handler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Handler.swift; sourceTree = "<group>"; };
 		0F43B54422BCE4D7001DE138 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
@@ -168,7 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				0F43B53C22BCE16A001DE138 /* BasicHandler.swift */,
-				0F43B53E22BCE1E9001DE138 /* BasicInput.swift */,
+				0F43B53E22BCE1E9001DE138 /* InputManager.swift */,
 				0F43B54022BCE258001DE138 /* Printer.swift */,
 				0F43B54822BCE68D001DE138 /* NoAction.swift */,
 				0F43B54622BCE666001DE138 /* StatusAction.swift */,
@@ -260,7 +260,7 @@
 				0F43B54522BCE4D7001DE138 /* Action.swift in Sources */,
 				0F37737422BCCAE0002D7700 /* Human.swift in Sources */,
 				0F43B54322BCE2EF001DE138 /* Handler.swift in Sources */,
-				0F43B53F22BCE1E9001DE138 /* BasicInput.swift in Sources */,
+				0F43B53F22BCE1E9001DE138 /* InputManager.swift in Sources */,
 				0F37735F22BCC200002D7700 /* Character.swift in Sources */,
 				0F37736522BCC493002D7700 /* GammaRadiated.swift in Sources */,
 				0F37737C22BCD810002D7700 /* CharacterConstants.swift in Sources */,

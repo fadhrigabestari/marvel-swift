@@ -44,4 +44,15 @@ struct Printer {
         print("It damaged your enemy for \(main.damage) points")
         print("\(opponent.name) remaining health: \(opponent.health)")
     }
+    
+    func printCharacterCreation() {
+        print("Select the type of character you want to make!")
+        print("(1) Human character")
+        print("(2) Gamma radiated human character")
+        print("(3) Alien character")
+        print("(4) Beast character")
+        print("(5) Human with alien ancestors")
+        print("(6) Human with beast ancestors")
+        print("(7) Beast with alien ancestors")
+    }
 }

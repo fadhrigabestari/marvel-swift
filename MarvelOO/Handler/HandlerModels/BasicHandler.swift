@@ -9,15 +9,19 @@
 import Foundation
 
 class BasicHandler: Handler {
-    let inputManager: BasicInput = BasicInput()
+    let inputManager: InputManager = InputManager()
     var action: Action = NoAction()
     
-//    func handleInputInSetup() -> (Character, Character) {
-//
-//    }
+    func handleInputInSetup() -> (Character, Character) {
+        let playerOne: Character
+        let playerTwo: Character
+        
+        
+        return (playerOne: playerOne, playerTwo: playerTwo)
+    }
     
     func handleInputInGame(playerOne: Character, playerTwo: Character, isPlayerOneTurn: Bool) {
-        let input = inputManager.getInput()
+        let input = inputManager.getInputString()
         action = action.determineAction(action: input)
         
         if let soloAction = action as? SoloAction {
