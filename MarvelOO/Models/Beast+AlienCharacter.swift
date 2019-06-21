@@ -29,5 +29,8 @@ class BeastAlienCharacter: AlienCharacter, Beast {
         abilities.append("Half-beast")
     }
     
-    
+    override func status() {
+        super.status()
+        print("Species: \(species)")
+    }
 }
