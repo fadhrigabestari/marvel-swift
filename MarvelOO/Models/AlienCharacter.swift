@@ -18,9 +18,9 @@ class AlienCharacter: BasicCharacter, Alien {
     }
     
     func alienate() {
-        self.health += 50
-        self.damage += 5
-        self.abilities.append("Alien")
+        health += 50
+        damage += 5
+        abilities.append("Alien")
     }
     
     override func status() {
