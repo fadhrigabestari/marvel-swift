@@ -9,6 +9,11 @@
 import Foundation
 
 class HumanCharacter: BasicCharacter {
+    override init(name: String, description: String) {
+        super.init(name: name, description: description)
+        humanize()
+    }
+    
     func humanize() {
         self.abilities.append("Emphatize")
     }
