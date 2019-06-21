@@ -1,5 +1,5 @@
 //
-//  Handler.swift
+//  DuoAction.swift
 //  MarvelOO
 //
 //  Created by PT. GOJEK INDONESIA on 21/06/19.
@@ -8,7 +8,6 @@
 
 import Foundation
 
-protocol Handler {
-    func handleInput(character: Character)
-    func handleInput(characters: [Character])
+protocol DuoAction: Action {
+    func execute(by main: Character, towards opponent: Character)
 }
