@@ -8,14 +8,32 @@
 
 import Foundation
 
-struct BasicHandler: Handler {
-    let action: Action = NoAction()
+class BasicHandler: Handler {
+    let inputManager: BasicInput = BasicInput()
+    var action: Action = NoAction()
     
-    func handleInput() {
-        
-    }
+//    func handleInputInSetup() -> (Character, Character) {
+//
+//    }
     
-    func handleInput(characters: [Character]) {
+    func handleInputInGame(playerOne: Character, playerTwo: Character, isPlayerOneTurn: Bool) {
+        let input = inputManager.getInput()
+        action = action.determineAction(action: input)
         
+        if let soloAction = action as? SoloAction {
+            if isPlayerOneTurn {
+                soloAction.execute(by: playerOne)
+            } else {
+                soloAction.execute(by: playerTwo)
+            }
+        }
+        
+        if let duoAction = action as? DuoAction {
+            if isPlayerOneTurn {
+                duoAction.execute(by: playerOne, towards: playerTwo)
+            } else {
+                duoAction.execute(by: playerTwo, towards: playerOne)
+            }
+        }
     }
 }
