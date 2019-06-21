@@ -23,8 +23,8 @@ class AlienCharacter: BasicCharacter, Alien {
         abilities.append("Alien")
     }
     
-    override func status() {
-        super.status()
-        print("Origin: \(origin)")
-    }
+//    override func status() {
+//        super.status()
+//        print("Origin: \(origin)")
+//    }
 }

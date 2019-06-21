@@ -28,8 +28,8 @@ class HumanRadiatedCharacter: BasicCharacter, Human, GammaRadiated {
         abilities.append("Semi-human")
     }
     
-    override func status() {
-        super.status()
-        print("Radiation level: \(radiationLevel)")
-    }
+//    override func status() {
+//        super.status()
+//        print("Radiation level: \(radiationLevel)")
+//    }
 }

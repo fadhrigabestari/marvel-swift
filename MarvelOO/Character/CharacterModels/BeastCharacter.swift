@@ -23,8 +23,8 @@ class BeastCharacter: BasicCharacter, Beast {
         abilities.append("Beast")
     }
     
-    override func status() {
-        super.status()
-        print("Species: \(species)")
-    }
+//    override func status() {
+//        super.status()
+//        print("Species: \(species)")
+//    }
 }
