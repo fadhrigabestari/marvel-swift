@@ -10,12 +10,4 @@ import Foundation
 
 protocol Named {
     var name: String {get set}
-    
-    func printName()
-}
-
-extension Named {
-    func printName() {
-        print("Name: \(name)")
-    }
 }

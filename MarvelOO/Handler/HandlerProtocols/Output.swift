@@ -1,5 +1,5 @@
 //
-//  Describable.swift
+//  Output.swift
 //  MarvelOO
 //
 //  Created by PT. GOJEK INDONESIA on 21/06/19.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol Describable {
-    var description: String {get set}
+protocol Output {
+    func printOutput(message: String)
 }

@@ -24,9 +24,12 @@
 		0F37737A22BCD6EA002D7700 /* Beast+AlienCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F37737922BCD6EA002D7700 /* Beast+AlienCharacter.swift */; };
 		0F37737C22BCD810002D7700 /* CharacterConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F37737B22BCD810002D7700 /* CharacterConstants.swift */; };
 		0F37737E22BCDAD8002D7700 /* Human+BeastCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F37737D22BCDAD8002D7700 /* Human+BeastCharacter.swift */; };
-		0F37738122BCDC90002D7700 /* InputHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F37738022BCDC90002D7700 /* InputHandler.swift */; };
-		0F37738322BCDC99002D7700 /* OutputHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F37738222BCDC99002D7700 /* OutputHandler.swift */; };
 		0F43B53922BCDD80001DE138 /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F43B53822BCDD80001DE138 /* Input.swift */; };
+		0F43B53B22BCDFCF001DE138 /* Output.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F43B53A22BCDFCF001DE138 /* Output.swift */; };
+		0F43B53D22BCE16A001DE138 /* BasicHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F43B53C22BCE16A001DE138 /* BasicHandler.swift */; };
+		0F43B53F22BCE1E9001DE138 /* BasicInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F43B53E22BCE1E9001DE138 /* BasicInput.swift */; };
+		0F43B54122BCE258001DE138 /* BasicOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F43B54022BCE258001DE138 /* BasicOutput.swift */; };
+		0F43B54322BCE2EF001DE138 /* Handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F43B54222BCE2EF001DE138 /* Handler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -60,9 +63,12 @@
 		0F37737922BCD6EA002D7700 /* Beast+AlienCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Beast+AlienCharacter.swift"; sourceTree = "<group>"; };
 		0F37737B22BCD810002D7700 /* CharacterConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterConstants.swift; sourceTree = "<group>"; };
 		0F37737D22BCDAD8002D7700 /* Human+BeastCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Human+BeastCharacter.swift"; sourceTree = "<group>"; };
-		0F37738022BCDC90002D7700 /* InputHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputHandler.swift; sourceTree = "<group>"; };
-		0F37738222BCDC99002D7700 /* OutputHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputHandler.swift; sourceTree = "<group>"; };
 		0F43B53822BCDD80001DE138 /* Input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Input.swift; sourceTree = "<group>"; };
+		0F43B53A22BCDFCF001DE138 /* Output.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Output.swift; sourceTree = "<group>"; };
+		0F43B53C22BCE16A001DE138 /* BasicHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicHandler.swift; sourceTree = "<group>"; };
+		0F43B53E22BCE1E9001DE138 /* BasicInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicInput.swift; sourceTree = "<group>"; };
+		0F43B54022BCE258001DE138 /* BasicOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicOutput.swift; sourceTree = "<group>"; };
+		0F43B54222BCE2EF001DE138 /* Handler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Handler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,8 +159,9 @@
 		0F43B53622BCDD40001DE138 /* HandlerModels */ = {
 			isa = PBXGroup;
 			children = (
-				0F37738022BCDC90002D7700 /* InputHandler.swift */,
-				0F37738222BCDC99002D7700 /* OutputHandler.swift */,
+				0F43B53C22BCE16A001DE138 /* BasicHandler.swift */,
+				0F43B53E22BCE1E9001DE138 /* BasicInput.swift */,
+				0F43B54022BCE258001DE138 /* BasicOutput.swift */,
 			);
 			path = HandlerModels;
 			sourceTree = "<group>";
@@ -163,6 +170,8 @@
 			isa = PBXGroup;
 			children = (
 				0F43B53822BCDD80001DE138 /* Input.swift */,
+				0F43B53A22BCDFCF001DE138 /* Output.swift */,
+				0F43B54222BCE2EF001DE138 /* Handler.swift */,
 			);
 			path = HandlerProtocols;
 			sourceTree = "<group>";
@@ -225,7 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F37736322BCC28F002D7700 /* Describable.swift in Sources */,
-				0F37738122BCDC90002D7700 /* InputHandler.swift in Sources */,
+				0F43B54122BCE258001DE138 /* BasicOutput.swift in Sources */,
 				0F37737822BCD1D8002D7700 /* Human+AlienCharacter.swift in Sources */,
 				0F37737A22BCD6EA002D7700 /* Beast+AlienCharacter.swift in Sources */,
 				0F37737022BCC7F1002D7700 /* Beast.swift in Sources */,
@@ -234,15 +243,18 @@
 				0F37737622BCCE40002D7700 /* HumanRadiatedCharacter.swift in Sources */,
 				0F37736122BCC23F002D7700 /* Named.swift in Sources */,
 				0F37737222BCCA0F002D7700 /* BasicCharacter.swift in Sources */,
+				0F43B53B22BCDFCF001DE138 /* Output.swift in Sources */,
 				0F43B53922BCDD80001DE138 /* Input.swift in Sources */,
 				0F37736822BCC4DC002D7700 /* HumanCharacter.swift in Sources */,
 				0F37737422BCCAE0002D7700 /* Human.swift in Sources */,
+				0F43B54322BCE2EF001DE138 /* Handler.swift in Sources */,
+				0F43B53F22BCE1E9001DE138 /* BasicInput.swift in Sources */,
 				0F37735F22BCC200002D7700 /* Character.swift in Sources */,
 				0F37736522BCC493002D7700 /* GammaRadiated.swift in Sources */,
 				0F37737C22BCD810002D7700 /* CharacterConstants.swift in Sources */,
 				0F37737E22BCDAD8002D7700 /* Human+BeastCharacter.swift in Sources */,
-				0F37738322BCDC99002D7700 /* OutputHandler.swift in Sources */,
 				0F37736C22BCC660002D7700 /* Alien.swift in Sources */,
+				0F43B53D22BCE16A001DE138 /* BasicHandler.swift in Sources */,
 				0F37736E22BCC7AD002D7700 /* BeastCharacter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,7 +13,6 @@ protocol Character: class, Named, Describable {
     var damage: Int {get set}
     var abilities: [String] {get set}
     
-    func status()
     func attack(on character: Character)
 }
 

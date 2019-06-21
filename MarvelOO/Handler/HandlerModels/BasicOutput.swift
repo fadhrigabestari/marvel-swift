@@ -1,5 +1,5 @@
 //
-//  InputHandler.swift
+//  BasicOutput.swift
 //  MarvelOO
 //
 //  Created by PT. GOJEK INDONESIA on 21/06/19.
@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+struct BasicOutput: Output {
+    func printOutput(message: String) {
+        print(message)
+    }
+}
