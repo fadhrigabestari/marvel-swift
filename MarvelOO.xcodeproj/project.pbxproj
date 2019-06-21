@@ -13,6 +13,8 @@
 		0F37736322BCC28F002D7700 /* Describable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F37736222BCC28F002D7700 /* Describable.swift */; };
 		0F37736522BCC493002D7700 /* GammaRadiated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F37736422BCC493002D7700 /* GammaRadiated.swift */; };
 		0F37736822BCC4DC002D7700 /* HumanCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F37736722BCC4DC002D7700 /* HumanCharacter.swift */; };
+		0F37736A22BCC626002D7700 /* AlienCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F37736922BCC626002D7700 /* AlienCharacter.swift */; };
+		0F37736C22BCC660002D7700 /* Alien.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F37736B22BCC660002D7700 /* Alien.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +37,8 @@
 		0F37736222BCC28F002D7700 /* Describable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Describable.swift; sourceTree = "<group>"; };
 		0F37736422BCC493002D7700 /* GammaRadiated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GammaRadiated.swift; sourceTree = "<group>"; };
 		0F37736722BCC4DC002D7700 /* HumanCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanCharacter.swift; sourceTree = "<group>"; };
+		0F37736922BCC626002D7700 /* AlienCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlienCharacter.swift; sourceTree = "<group>"; };
+		0F37736B22BCC660002D7700 /* Alien.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alien.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 				0F37736022BCC23F002D7700 /* Named.swift */,
 				0F37736222BCC28F002D7700 /* Describable.swift */,
 				0F37736422BCC493002D7700 /* GammaRadiated.swift */,
+				0F37736B22BCC660002D7700 /* Alien.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -89,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				0F37736722BCC4DC002D7700 /* HumanCharacter.swift */,
+				0F37736922BCC626002D7700 /* AlienCharacter.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -151,11 +157,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F37736322BCC28F002D7700 /* Describable.swift in Sources */,
+				0F37736A22BCC626002D7700 /* AlienCharacter.swift in Sources */,
 				0F37735722BCC1AF002D7700 /* main.swift in Sources */,
 				0F37736122BCC23F002D7700 /* Named.swift in Sources */,
 				0F37736822BCC4DC002D7700 /* HumanCharacter.swift in Sources */,
 				0F37735F22BCC200002D7700 /* Character.swift in Sources */,
 				0F37736522BCC493002D7700 /* GammaRadiated.swift in Sources */,
+				0F37736C22BCC660002D7700 /* Alien.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
