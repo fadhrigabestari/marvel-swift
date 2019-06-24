@@ -17,8 +17,4 @@ class HumanCharacter: BasicCharacter, Human {
     func humanize() {
         self.abilities.append("Human")
     }
-    
-//    override func status() {
-//        super.status()
-//    }
 }

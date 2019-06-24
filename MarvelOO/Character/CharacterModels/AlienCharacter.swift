@@ -22,9 +22,4 @@ class AlienCharacter: BasicCharacter, Alien {
         damage += ALIEN_DAMAGE
         abilities.append("Alien")
     }
-    
-//    override func status() {
-//        super.status()
-//        print("Origin: \(origin)")
-//    }
 }

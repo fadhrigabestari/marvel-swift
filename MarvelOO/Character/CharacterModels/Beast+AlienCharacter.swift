@@ -28,9 +28,4 @@ class BeastAlienCharacter: AlienCharacter, Beast {
         damage += Int(BEAST_DAMAGE / 2)
         abilities.append("Half-beast")
     }
-    
-//    override func status() {
-//        super.status()
-//        print("Species: \(species)")
-//    }
 }
