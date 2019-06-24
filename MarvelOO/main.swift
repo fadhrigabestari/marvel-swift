@@ -9,5 +9,4 @@
 import Foundation
 
 let handler = GameHandler()
-let playerOne: Character
-let playerTwo: Character
+var game = MarvelGame()
