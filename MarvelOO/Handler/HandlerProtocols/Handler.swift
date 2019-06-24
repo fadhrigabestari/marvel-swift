@@ -9,4 +9,9 @@
 import Foundation
 
 protocol Handler {
+    var inputManager: InputManager {get set}
+    var printer: Printer {get set}
+    
+    func handleInputInSetup(input: Int) -> Character
+    func handleInputInGame(input: String, playerOne: Character, playerTwo: Character, isPlayerOneTurn: Bool)
 }

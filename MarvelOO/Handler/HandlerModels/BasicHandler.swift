@@ -8,8 +8,10 @@
 
 import Foundation
 
-class BasicHandler: Handler {
-    let inputManager: InputManager = InputManager()
+class BasicHandler: Handler {    
+    var inputManager: InputManager = InputManager()
+    var printer: Printer = Printer()
+    
     var factory: CharacterFactory = BasicCharacterFactory()
     var action: Action = NoAction()
     

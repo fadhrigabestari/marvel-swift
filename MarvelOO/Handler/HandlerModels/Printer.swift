@@ -55,4 +55,10 @@ struct Printer {
         print("(6) Human with beast ancestors")
         print("(7) Beast with alien ancestors")
     }
+    
+    func printGameLoop() {
+        print("Choose what your character's next action")
+        print("'status' to check on your character's status")
+        print("'attack' to attack the other player")
+    }
 }

@@ -8,9 +8,6 @@
 
 import Foundation
 
-let character: Character = HumanRadiatedCharacter(name: "Fadhriga", description: "tralala", radiationLevel: 30)
-let char: Character = HumanAlienCharacter(name: "wiwi", description: "wowo", origin: "Asgard")
-
-let action: Action = StatusAction()
-let action2: StatusAction = StatusAction()
-action2.execute(by: char)
+let handler = BasicHandler()
+let playerOne: Character
+let playerTwo: Character
