@@ -11,7 +11,8 @@ import Foundation
 struct NoAction: SoloAction {
     var printer: Printer = Printer()
 
-    func execute(by character: Character, isPlayerOneTurn: inout Bool) {
+    func execute(by character: Character) -> Bool {
         printer.printUnknown()
+        return false
     }    
 }

@@ -11,7 +11,8 @@ import Foundation
 struct StatusAction: SoloAction {
     var printer: Printer = Printer()
 
-    func execute(by character: Character, isPlayerOneTurn: inout Bool) {
+    func execute(by character: Character) -> Bool {
         printer.printStatus(by: character)
+        return false
     }
 }

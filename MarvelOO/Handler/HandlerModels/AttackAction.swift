@@ -11,9 +11,9 @@ import Foundation
 struct AttackAction: DuoAction {
     var printer: Printer = Printer()
 
-    mutating func execute(by main: Character, towards opponent: Character, isPlayerOneTurn: inout Bool) {
+    func execute(by main: Character, towards opponent: Character) -> Bool {
         opponent.health -= main.damage
         printer.printAttack(by: main, towards: opponent)
-        isPlayerOneTurn = !isPlayerOneTurn
+        return true
     }
 }

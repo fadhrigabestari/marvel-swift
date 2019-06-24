@@ -28,11 +28,16 @@ class MarvelGame {
             handler.printer.printGameLoop()
             
             let input = handler.inputManager.getInputString()
-            handler.handleInputInGame(input: input,
-                                      playerOne: playerOne,
-                                      playerTwo: playerTwo,
-                                      isPlayerOneTurn: &isPlayerOneTurn)
+            let shouldReverseTurn = handler.handleInputInGame(input: input,
+                                                              playerOne: playerOne,
+                                                              playerTwo: playerTwo,
+                                                              isPlayerOneTurn: isPlayerOneTurn)
             checkGameOver(playerOne: playerOne, playerTwo: playerTwo)
+            
+            if shouldReverseTurn {
+                reverseTurn()
+            }
+            
             if isGameOver {
                 reverseTurn()
             }

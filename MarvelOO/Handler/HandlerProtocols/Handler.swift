@@ -13,5 +13,5 @@ protocol Handler {
     var printer: Printer {get set}
     
     func handleInputInSetup(input: Int) -> Character
-    func handleInputInGame(input: String, playerOne: Character, playerTwo: Character, isPlayerOneTurn: inout Bool)
+    func handleInputInGame(input: String, playerOne: Character, playerTwo: Character, isPlayerOneTurn: Bool) -> Bool
 }

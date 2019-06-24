@@ -21,19 +21,24 @@ class GameHandler: Handler {
         return factory.manufacture()
     }
     
-    func handleInputInGame(input: String, playerOne: Character, playerTwo: Character, isPlayerOneTurn: inout Bool) {
+    func handleInputInGame(input: String, playerOne: Character, playerTwo: Character, isPlayerOneTurn: Bool) -> Bool {
         action = action.determineAction(action: input)
-        if var soloAction = action as? SoloAction {
-            soloAction.execute(by: playerOne, isPlayerOneTurn: &isPlayerOneTurn)
-            soloAction.execute(by: playerTwo, isPlayerOneTurn: &isPlayerOneTurn)
-        }
-        
-        if var duoAction = action as? DuoAction {
+        if let soloAction = action as? SoloAction {
             if isPlayerOneTurn {
-                duoAction.execute(by: playerOne, towards: playerTwo, isPlayerOneTurn: &isPlayerOneTurn)
+                return soloAction.execute(by: playerOne)
             } else {
-                duoAction.execute(by: playerTwo, towards: playerOne, isPlayerOneTurn: &isPlayerOneTurn)
+                return soloAction.execute(by: playerTwo)
             }
         }
+        
+        if let duoAction = action as? DuoAction {
+            if isPlayerOneTurn {
+                return duoAction.execute(by: playerOne, towards: playerTwo)
+            } else {
+                return duoAction.execute(by: playerTwo, towards: playerOne)
+            }
+        }
+        
+        return false
     }
 }
