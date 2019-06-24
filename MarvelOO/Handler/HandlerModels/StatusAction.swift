@@ -8,10 +8,10 @@
 
 import Foundation
 
-struct StatusAction: Action {
+struct StatusAction: SoloAction {
     var printer: Printer = Printer()
 
-    func execute(by character: Character) {
+    func execute(by character: Character, isPlayerOneTurn: inout Bool) {
         printer.printStatus(by: character)
     }
 }

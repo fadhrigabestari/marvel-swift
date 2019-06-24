@@ -16,6 +16,8 @@ struct Printer {
     func printStatus(by character: Character) {
         print("Name: \(character.name)")
         print("Description: \(character.description)")
+        print("Health: \(character.health)")
+        print("Damage: \(character.damage)")
         print("Ability: ", terminator: "")
         for index in character.abilities.indices {
             if index < character.abilities.count - 1 {
@@ -37,12 +39,14 @@ struct Printer {
         if let char = character as? GammaRadiated {
             print("Radiation level: \(char.radiationLevel)")
         }
+        print()
     }
     
     func printAttack(by main: Character, towards opponent: Character) {
         print("\(main.name) attacked \(opponent.name)")
         print("It damaged your enemy for \(main.damage) points")
-        print("\(opponent.name) remaining health: \(opponent.health)")
+        print("\(opponent.name)'s remaining health: \(opponent.health)")
+        print()
     }
     
     func printCharacterCreation() {

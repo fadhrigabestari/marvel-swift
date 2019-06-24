@@ -10,3 +10,9 @@ import Foundation
 
 let handler = GameHandler()
 var game = MarvelGame()
+
+var playerOne: Character
+var playerTwo: Character
+
+(playerOne, playerTwo) = game.setup()
+game.gameLoop(playerOne: playerOne, playerTwo: playerTwo)

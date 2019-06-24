@@ -9,5 +9,5 @@
 import Foundation
 
 protocol SoloAction: Action {
-    func execute(by character: Character)
+    mutating func execute(by character: Character, isPlayerOneTurn: inout Bool)
 }

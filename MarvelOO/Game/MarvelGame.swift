@@ -16,10 +16,7 @@ class MarvelGame {
 
     
     func setup() -> (Character, Character) {
-        announceTurn()
         let playerOne = characterCreation()
-        reverseTurn()
-        announceTurn()
         let playerTwo = characterCreation()
         
         return (playerOne: playerOne, playerTwo: playerTwo)
@@ -28,14 +25,15 @@ class MarvelGame {
     func gameLoop(playerOne: Character, playerTwo: Character) {
         while !isGameOver {
             announceTurn()
+            handler.printer.printGameLoop()
             
             let input = handler.inputManager.getInputString()
             handler.handleInputInGame(input: input,
                                       playerOne: playerOne,
                                       playerTwo: playerTwo,
-                                      isPlayerOneTurn: isPlayerOneTurn)
+                                      isPlayerOneTurn: &isPlayerOneTurn)
             checkGameOver(playerOne: playerOne, playerTwo: playerTwo)
-            if !isGameOver {
+            if isGameOver {
                 reverseTurn()
             }
         }
@@ -43,10 +41,12 @@ class MarvelGame {
     }
     
     func characterCreation() -> Character {
+        announceTurn()
         handler.printer.printCharacterCreation()
         let input = handler.inputManager.getInputInt()
         factory = factory.determineFactory(option: input)
         let character = factory.manufacture()
+        reverseTurn()
         
         return character
     }
@@ -61,7 +61,7 @@ class MarvelGame {
     }
     
     func checkGameOver(playerOne: Character, playerTwo: Character) {
-        if playerOne.health < 0 || playerTwo.health < 0 {
+        if playerOne.health <= 0 || playerTwo.health <= 0 {
             isGameOver = true
         }
     }

@@ -9,5 +9,5 @@
 import Foundation
 
 protocol DuoAction: Action {
-    func execute(by main: Character, towards opponent: Character)
+    mutating func execute(by main: Character, towards opponent: Character, isPlayerOneTurn: inout Bool)
 }
