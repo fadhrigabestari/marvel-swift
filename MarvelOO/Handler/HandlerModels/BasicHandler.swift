@@ -13,12 +13,10 @@ class BasicHandler: Handler {
     var factory: CharacterFactory = BasicCharacterFactory()
     var action: Action = NoAction()
     
-    func handleInputInSetup(input: Int) -> (Character, Character) {
+    func handleInputInSetup(input: Int) -> Character {
         factory = factory.determineFactory(option: input)
-        let playerOne: Character = factory.manufacture()
-        let playerTwo: Character = factory.manufacture()
         
-        return (playerOne: playerOne, playerTwo: playerTwo)
+        return factory.manufacture()
     }
     
     func handleInputInGame(input: String, playerOne: Character, playerTwo: Character, isPlayerOneTurn: Bool) {
