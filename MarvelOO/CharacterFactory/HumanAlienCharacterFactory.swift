@@ -9,5 +9,11 @@
 import Foundation
 
 struct HumanAlienCharacterFactory: CharacterFactory {
-    
+    func manufacture() -> Character {
+        let name = manufactureName()
+        let description = manufactureDescription()
+        let origin = manufactureOrigin()
+        
+        return HumanAlienCharacter(name: name, description: description, origin: origin)
+    }
 }

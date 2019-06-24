@@ -9,5 +9,11 @@
 import Foundation
 
 struct HumanRadiatedCharacterFactory: CharacterFactory {
-    
+    func manufacture() -> Character {
+        let name = manufactureName()
+        let description = manufactureDescription()
+        let radiationLevel = manufactureRadiationLevel()
+        
+        return HumanRadiatedCharacter(name: name, description: description, radiationLevel: radiationLevel)
+    }
 }

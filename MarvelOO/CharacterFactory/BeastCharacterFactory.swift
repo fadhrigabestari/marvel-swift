@@ -9,5 +9,11 @@
 import Foundation
 
 struct BeastCharacterFactory: CharacterFactory {
-    
+    func manufacture() -> Character {
+        let name = manufactureName()
+        let description = manufactureDescription()
+        let species = manufactureSpecies()
+        
+        return BeastCharacter(name: name, description: description, species: species)
+    }
 }

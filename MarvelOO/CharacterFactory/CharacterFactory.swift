@@ -9,11 +9,17 @@
 import Foundation
 
 protocol CharacterFactory {
-    static func manufactureCharacter(option: Int) -> CharacterFactory
+    func determineFactory(option: Int) -> CharacterFactory
+    func manufacture() -> Character
+    func manufactureName() -> String
+    func manufactureDescription() -> String
+    func manufactureRadiationLevel() -> Int
+    func manufactureSpecies() -> String
+    func manufactureOrigin() -> String
 }
 
 extension CharacterFactory {
-    static func manufactureCharacter(option: Int) -> CharacterFactory {
+    func determineFactory(option: Int) -> CharacterFactory {
         switch option {
         case 1:
             return HumanCharacterFactory()
@@ -32,6 +38,41 @@ extension CharacterFactory {
         default:
             return BasicCharacterFactory()
         }
+    }
+    
+    func manufactureName() -> String {
+        let inputManager = InputManager()
+        
+        print("Insert the name of your character:")
+        return inputManager.getInputString()
+    }
+    
+    func manufactureDescription() -> String {
+        let inputManager = InputManager()
+        
+        print("Add a description for your character:")
+        return inputManager.getInputString()
+    }
+    
+    func manufactureRadiationLevel() -> Int {
+        let inputManager = InputManager()
+        
+        print("Input the radiation level of your character:")
+        return inputManager.getInputInt()
+    }
+    
+    func manufactureSpecies() -> String {
+        let inputManager = InputManager()
+        
+        print("Insert the type of beast can your character be considered as:")
+        return inputManager.getInputString()
+    }
+    
+    func manufactureOrigin() -> String {
+        let inputManager = InputManager()
+        
+        print("Input the planet of origin for your character")
+        return inputManager.getInputString()
     }
 }
 

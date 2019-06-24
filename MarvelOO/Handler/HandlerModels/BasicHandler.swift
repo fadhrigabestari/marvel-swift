@@ -10,18 +10,18 @@ import Foundation
 
 class BasicHandler: Handler {
     let inputManager: InputManager = InputManager()
+    var factory: CharacterFactory = BasicCharacterFactory()
     var action: Action = NoAction()
     
-//    func handleInputInSetup() -> (Character, Character) {
-//        let playerOne: Character
-//        let playerTwo: Character
-//        
-//        
-//        return (playerOne: playerOne, playerTwo: playerTwo)
-//    }
+    func handleInputInSetup(input: Int) -> (Character, Character) {
+        factory = factory.determineFactory(option: input)
+        let playerOne: Character = factory.manufacture()
+        let playerTwo: Character = factory.manufacture()
+        
+        return (playerOne: playerOne, playerTwo: playerTwo)
+    }
     
-    func handleInputInGame(playerOne: Character, playerTwo: Character, isPlayerOneTurn: Bool) {
-        let input = inputManager.getInputString()
+    func handleInputInGame(input: String, playerOne: Character, playerTwo: Character, isPlayerOneTurn: Bool) {
         action = action.determineAction(action: input)
         
         if let soloAction = action as? SoloAction {
