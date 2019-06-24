@@ -24,11 +24,8 @@ class GameHandler: Handler {
     func handleInputInGame(input: String, playerOne: Character, playerTwo: Character, isPlayerOneTurn: inout Bool) {
         action = action.determineAction(action: input)
         if var soloAction = action as? SoloAction {
-            if isPlayerOneTurn {
-                soloAction.execute(by: playerOne, isPlayerOneTurn: &isPlayerOneTurn)
-            } else {
-                soloAction.execute(by: playerTwo, isPlayerOneTurn: &isPlayerOneTurn)
-            }
+            soloAction.execute(by: playerOne, isPlayerOneTurn: &isPlayerOneTurn)
+            soloAction.execute(by: playerTwo, isPlayerOneTurn: &isPlayerOneTurn)
         }
         
         if var duoAction = action as? DuoAction {
