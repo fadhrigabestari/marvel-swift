@@ -8,6 +8,6 @@
 
 import Foundation
 
-let handler = BasicHandler()
+let handler = GameHandler()
 let playerOne: Character
 let playerTwo: Character

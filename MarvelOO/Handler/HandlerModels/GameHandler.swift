@@ -8,7 +8,7 @@
 
 import Foundation
 
-class BasicHandler: Handler {    
+class GameHandler: Handler {
     var inputManager: InputManager = InputManager()
     var printer: Printer = Printer()
     
