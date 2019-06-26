@@ -8,6 +8,7 @@
 
 import Foundation
 
+// MARK: LISKOV SUBSTITUTION PRINCIPLE
 protocol Action {
     var printer: Printer {get set}
     
