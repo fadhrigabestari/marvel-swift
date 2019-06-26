@@ -50,6 +50,7 @@
 		0F276DFD22C388A400793441 /* HumanCharacterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F276DFC22C388A400793441 /* HumanCharacterTest.swift */; };
 		0F276DFF22C3896D00793441 /* HumanRadiatedCharacterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F276DFE22C3896D00793441 /* HumanRadiatedCharacterTest.swift */; };
 		0F276E0122C38D2700793441 /* AlienCharacterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F276E0022C38D2700793441 /* AlienCharacterTest.swift */; };
+		0F276E0322C38DA600793441 /* BeastCharacterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F276E0222C38DA600793441 /* BeastCharacterTest.swift */; };
 		0F37735722BCC1AF002D7700 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F37735622BCC1AF002D7700 /* main.swift */; };
 		0F37735F22BCC200002D7700 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F37735E22BCC200002D7700 /* Character.swift */; };
 		0F37736122BCC23F002D7700 /* Named.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F37736022BCC23F002D7700 /* Named.swift */; };
@@ -108,6 +109,7 @@
 		0F276DFC22C388A400793441 /* HumanCharacterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanCharacterTest.swift; sourceTree = "<group>"; };
 		0F276DFE22C3896D00793441 /* HumanRadiatedCharacterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanRadiatedCharacterTest.swift; sourceTree = "<group>"; };
 		0F276E0022C38D2700793441 /* AlienCharacterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlienCharacterTest.swift; sourceTree = "<group>"; };
+		0F276E0222C38DA600793441 /* BeastCharacterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeastCharacterTest.swift; sourceTree = "<group>"; };
 		0F37735322BCC1AF002D7700 /* MarvelOO */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MarvelOO; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F37735622BCC1AF002D7700 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		0F37735E22BCC200002D7700 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				0F276DFC22C388A400793441 /* HumanCharacterTest.swift */,
 				0F276DFE22C3896D00793441 /* HumanRadiatedCharacterTest.swift */,
 				0F276E0022C38D2700793441 /* AlienCharacterTest.swift */,
+				0F276E0222C38DA600793441 /* BeastCharacterTest.swift */,
 			);
 			path = CharacterTests;
 			sourceTree = "<group>";
@@ -499,6 +502,7 @@
 				0F276DF322C387FA00793441 /* BasicCharacterFactory.swift in Sources */,
 				0F276DEE22C387FA00793441 /* AlienCharacterFactory.swift in Sources */,
 				0F276DE022C387D900793441 /* DuoAction.swift in Sources */,
+				0F276E0322C38DA600793441 /* BeastCharacterTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
