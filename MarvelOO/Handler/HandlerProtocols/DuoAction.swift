@@ -8,6 +8,7 @@
 
 import Foundation
 
+// MARK: COMMAND PATTERN
 protocol DuoAction: Action {
     func execute(by main: Character, towards opponent: Character) -> Bool
 }

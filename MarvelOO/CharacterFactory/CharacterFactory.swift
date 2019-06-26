@@ -8,6 +8,7 @@
 
 import Foundation
 
+// MARK: BUILDER X FACTORY PATTERN
 protocol CharacterFactory {
     func determineFactory(option: Int) -> CharacterFactory
     func manufacture() -> Character

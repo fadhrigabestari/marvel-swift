@@ -8,6 +8,7 @@
 
 import Foundation
 
+// MARK: COMMAND PATTERN
 protocol SoloAction: Action {
     func execute(by character: Character) -> Bool
 }
