@@ -47,6 +47,7 @@
 		0F276DF822C387FA00793441 /* Alien.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F37736B22BCC660002D7700 /* Alien.swift */; };
 		0F276DF922C387FA00793441 /* Beast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F37736F22BCC7F1002D7700 /* Beast.swift */; };
 		0F276DFA22C387FA00793441 /* Human.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F37737322BCCAE0002D7700 /* Human.swift */; };
+		0F276DFD22C388A400793441 /* HumanCharacterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F276DFC22C388A400793441 /* HumanCharacterTest.swift */; };
 		0F37735722BCC1AF002D7700 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F37735622BCC1AF002D7700 /* main.swift */; };
 		0F37735F22BCC200002D7700 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F37735E22BCC200002D7700 /* Character.swift */; };
 		0F37736122BCC23F002D7700 /* Named.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F37736022BCC23F002D7700 /* Named.swift */; };
@@ -102,6 +103,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0F276DFC22C388A400793441 /* HumanCharacterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanCharacterTest.swift; sourceTree = "<group>"; };
 		0F37735322BCC1AF002D7700 /* MarvelOO */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MarvelOO; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F37735622BCC1AF002D7700 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		0F37735E22BCC200002D7700 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				0FC6F0C022C37B33004BD928 /* BasicCharacterTest.swift */,
+				0F276DFC22C388A400793441 /* HumanCharacterTest.swift */,
 			);
 			path = CharacterTests;
 			sourceTree = "<group>";
@@ -459,6 +462,7 @@
 				0F276DE322C387E200793441 /* Handler.swift in Sources */,
 				0F276DE622C387EA00793441 /* HumanRadiatedCharacter.swift in Sources */,
 				0F276DE122C387DB00793441 /* SoloAction.swift in Sources */,
+				0F276DFD22C388A400793441 /* HumanCharacterTest.swift in Sources */,
 				0F276DF722C387FA00793441 /* GammaRadiated.swift in Sources */,
 				0FC6F0BB22C37A6F004BD928 /* MarvelOOTests.swift in Sources */,
 				0F276DDB22C387CB00793441 /* Printer.swift in Sources */,
