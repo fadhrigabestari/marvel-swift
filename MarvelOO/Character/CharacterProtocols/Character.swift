@@ -8,6 +8,7 @@
 
 import Foundation
 
+// MARK: OPEN/CLOSED PRINCIPLE
 protocol Character: class, Named, Describable {
     var health: Int {get set}
     var damage: Int {get set}
