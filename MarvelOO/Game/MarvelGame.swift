@@ -9,11 +9,16 @@
 import Foundation
 
 class MarvelGame {
-    var isPlayerOneTurn: Bool = true
-    var isGameOver: Bool = false
-    var handler: Handler = GameHandler()
-    var factory: CharacterFactory = BasicCharacterFactory()
-
+    // MARK: DEPENDENCY INVERSION PRINCIPLE
+    var isPlayerOneTurn: Bool
+    var isGameOver: Bool
+    let handler: GameHandler
+    
+    init(handler: GameHandler, isPlayerOneTurn: Bool, isGameOver: Bool) {
+        self.handler = handler
+        self.isPlayerOneTurn = isPlayerOneTurn
+        self.isGameOver = isGameOver
+    }
     
     func setup() -> (Character, Character) {
         let playerOne = characterCreation()
@@ -49,8 +54,8 @@ class MarvelGame {
         announceTurn()
         handler.printer.printCharacterCreation()
         let input = handler.inputManager.getInputInt()
-        factory = factory.determineFactory(option: input)
-        let character = factory.manufacture()
+        handler.factory = handler.factory.determineFactory(option: input)
+        let character = handler.factory.manufacture()
         reverseTurn()
         
         return character

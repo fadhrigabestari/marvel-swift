@@ -11,18 +11,18 @@ import Foundation
 protocol Action {
     var printer: Printer {get set}
     
-    func determineAction(action: String) -> Action
+    func determineAction(action: String, printer: Printer) -> Action
 }
 
 extension Action {
-    func determineAction(action: String) -> Action {
+    func determineAction(action: String, printer: Printer) -> Action {
         switch action {
         case "status":
-            return StatusAction()
+            return StatusAction(printer: printer)
         case "attack":
-            return AttackAction()
+            return AttackAction(printer: printer)
         default:
-            return NoAction()
+            return NoAction(printer: printer)
         }
     }
 }

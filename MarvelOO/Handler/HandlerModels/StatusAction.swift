@@ -9,7 +9,7 @@
 import Foundation
 
 struct StatusAction: SoloAction {
-    var printer: Printer = Printer()
+    var printer: Printer
 
     func execute(by character: Character) -> Bool {
         printer.printStatus(by: character)

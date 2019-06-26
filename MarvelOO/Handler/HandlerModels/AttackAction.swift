@@ -9,7 +9,7 @@
 import Foundation
 
 struct AttackAction: DuoAction {
-    var printer: Printer = Printer()
+    var printer: Printer
 
     func execute(by main: Character, towards opponent: Character) -> Bool {
         opponent.health -= main.damage

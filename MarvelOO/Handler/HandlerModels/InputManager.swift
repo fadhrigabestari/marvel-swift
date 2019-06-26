@@ -9,8 +9,6 @@
 import Foundation
 
 struct InputManager {
-    var printer: Printer = Printer()
-    
     func getInputString() -> String {
         let line = readLine()
         if let input = line {

@@ -8,8 +8,15 @@
 
 import Foundation
 
-let handler = GameHandler()
-var game = MarvelGame()
+// Game setup
+let gameHandler = GameHandler(inputManager: InputManager(),
+                          printer: Printer(),
+                          factory: BasicCharacterFactory(),
+                          action: NoAction(printer: Printer()))
+let isPlayerOneTurn = true
+let isGameOver = false
+
+var game = MarvelGame(handler: gameHandler, isPlayerOneTurn: isPlayerOneTurn, isGameOver: isGameOver)
 
 var playerOne: Character
 var playerTwo: Character
