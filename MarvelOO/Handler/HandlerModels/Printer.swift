@@ -8,6 +8,7 @@
 
 import Foundation
 
+// MARK: SINGLE RESPONSIBILITY PRINCIPLE
 struct Printer {
     func printUnknown() {
         print("Unknown command!??!??")

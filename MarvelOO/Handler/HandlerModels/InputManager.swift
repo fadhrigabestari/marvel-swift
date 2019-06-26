@@ -8,6 +8,7 @@
 
 import Foundation
 
+// MARK: SINGLE RESPONSIBILITY PRINCIPLE
 struct InputManager {
     func getInputString() -> String {
         let line = readLine()
