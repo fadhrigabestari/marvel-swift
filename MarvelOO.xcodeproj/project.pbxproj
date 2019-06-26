@@ -49,6 +49,7 @@
 		0F276DFA22C387FA00793441 /* Human.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F37737322BCCAE0002D7700 /* Human.swift */; };
 		0F276DFD22C388A400793441 /* HumanCharacterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F276DFC22C388A400793441 /* HumanCharacterTest.swift */; };
 		0F276DFF22C3896D00793441 /* HumanRadiatedCharacterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F276DFE22C3896D00793441 /* HumanRadiatedCharacterTest.swift */; };
+		0F276E0122C38D2700793441 /* AlienCharacterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F276E0022C38D2700793441 /* AlienCharacterTest.swift */; };
 		0F37735722BCC1AF002D7700 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F37735622BCC1AF002D7700 /* main.swift */; };
 		0F37735F22BCC200002D7700 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F37735E22BCC200002D7700 /* Character.swift */; };
 		0F37736122BCC23F002D7700 /* Named.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F37736022BCC23F002D7700 /* Named.swift */; };
@@ -106,6 +107,7 @@
 /* Begin PBXFileReference section */
 		0F276DFC22C388A400793441 /* HumanCharacterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanCharacterTest.swift; sourceTree = "<group>"; };
 		0F276DFE22C3896D00793441 /* HumanRadiatedCharacterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanRadiatedCharacterTest.swift; sourceTree = "<group>"; };
+		0F276E0022C38D2700793441 /* AlienCharacterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlienCharacterTest.swift; sourceTree = "<group>"; };
 		0F37735322BCC1AF002D7700 /* MarvelOO */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MarvelOO; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F37735622BCC1AF002D7700 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		0F37735E22BCC200002D7700 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				0FC6F0C022C37B33004BD928 /* BasicCharacterTest.swift */,
 				0F276DFC22C388A400793441 /* HumanCharacterTest.swift */,
 				0F276DFE22C3896D00793441 /* HumanRadiatedCharacterTest.swift */,
+				0F276E0022C38D2700793441 /* AlienCharacterTest.swift */,
 			);
 			path = CharacterTests;
 			sourceTree = "<group>";
@@ -477,6 +480,7 @@
 				0F276DF522C387FA00793441 /* Named.swift in Sources */,
 				0F276DF922C387FA00793441 /* Beast.swift in Sources */,
 				0F276DF822C387FA00793441 /* Alien.swift in Sources */,
+				0F276E0122C38D2700793441 /* AlienCharacterTest.swift in Sources */,
 				0F276DE422C387EA00793441 /* BasicCharacter.swift in Sources */,
 				0F276DDD22C387D000793441 /* GameHandler.swift in Sources */,
 				0F276DD422C3878100793441 /* main.swift in Sources */,
