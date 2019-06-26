@@ -9,9 +9,7 @@
 import Foundation
 
 protocol Handler {
+    // MARK: INTERFACE SEGREGATION PRINCIPLE
     var inputManager: InputManager {get set}
     var printer: Printer {get set}
-    
-    func handleInputInSetup(input: Int) -> Character
-    func handleInputInGame(input: String, playerOne: Character, playerTwo: Character, isPlayerOneTurn: Bool) -> Bool
 }

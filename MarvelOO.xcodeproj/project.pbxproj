@@ -44,6 +44,8 @@
 		0F43B56222BCFFFE001DE138 /* BeastAlienCharacterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F43B56122BCFFFE001DE138 /* BeastAlienCharacterFactory.swift */; };
 		0F43B56422BD001A001DE138 /* BasicCharacterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F43B56322BD001A001DE138 /* BasicCharacterFactory.swift */; };
 		0F8CEC4822C08511008685F5 /* MarvelGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8CEC4722C08511008685F5 /* MarvelGame.swift */; };
+		0FEEF05122C326B20035E27C /* GameLoopHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEEF05022C326B20035E27C /* GameLoopHandler.swift */; };
+		0FEEF05322C326CE0035E27C /* GameSetupHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEEF05222C326CE0035E27C /* GameSetupHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -97,6 +99,8 @@
 		0F43B56122BCFFFE001DE138 /* BeastAlienCharacterFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeastAlienCharacterFactory.swift; sourceTree = "<group>"; };
 		0F43B56322BD001A001DE138 /* BasicCharacterFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCharacterFactory.swift; sourceTree = "<group>"; };
 		0F8CEC4722C08511008685F5 /* MarvelGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelGame.swift; sourceTree = "<group>"; };
+		0FEEF05022C326B20035E27C /* GameLoopHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLoopHandler.swift; sourceTree = "<group>"; };
+		0FEEF05222C326CE0035E27C /* GameSetupHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSetupHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +210,8 @@
 				0F43B54422BCE4D7001DE138 /* Action.swift */,
 				0F43B54A22BCE8D4001DE138 /* SoloAction.swift */,
 				0F43B54E22BCE909001DE138 /* DuoAction.swift */,
+				0FEEF05022C326B20035E27C /* GameLoopHandler.swift */,
+				0FEEF05222C326CE0035E27C /* GameSetupHandler.swift */,
 			);
 			path = HandlerProtocols;
 			sourceTree = "<group>";
@@ -311,6 +317,7 @@
 				0F37737422BCCAE0002D7700 /* Human.swift in Sources */,
 				0F43B55322BCFDD2001DE138 /* CharacterFactory.swift in Sources */,
 				0F43B54322BCE2EF001DE138 /* Handler.swift in Sources */,
+				0FEEF05122C326B20035E27C /* GameLoopHandler.swift in Sources */,
 				0F43B53F22BCE1E9001DE138 /* InputManager.swift in Sources */,
 				0F37735F22BCC200002D7700 /* Character.swift in Sources */,
 				0F37736522BCC493002D7700 /* GammaRadiated.swift in Sources */,
@@ -326,6 +333,7 @@
 				0F43B54F22BCE909001DE138 /* DuoAction.swift in Sources */,
 				0F43B53D22BCE16A001DE138 /* GameHandler.swift in Sources */,
 				0F43B54B22BCE8D4001DE138 /* SoloAction.swift in Sources */,
+				0FEEF05322C326CE0035E27C /* GameSetupHandler.swift in Sources */,
 				0F43B55822BCFF75001DE138 /* HumanRadiatedCharacterFactory.swift in Sources */,
 				0F37736E22BCC7AD002D7700 /* BeastCharacter.swift in Sources */,
 			);

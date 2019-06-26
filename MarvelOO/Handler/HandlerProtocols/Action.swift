@@ -11,6 +11,7 @@ import Foundation
 protocol Action {
     var printer: Printer {get set}
     
+    // MARK: DEPENDENCY INVERSION PRINCIPLE
     func determineAction(action: String, printer: Printer) -> Action
 }
 
