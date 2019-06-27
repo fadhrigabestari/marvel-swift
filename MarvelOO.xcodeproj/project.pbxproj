@@ -94,6 +94,7 @@
 		0F94B73322C4764B00A8ACD1 /* HumanRadiatedCharacterFactoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F94B73222C4764B00A8ACD1 /* HumanRadiatedCharacterFactoryTest.swift */; };
 		0F94B73522C476EB00A8ACD1 /* AlienCharacterFactoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F94B73422C476EB00A8ACD1 /* AlienCharacterFactoryTest.swift */; };
 		0F94B73722C47B1F00A8ACD1 /* BeastCharacterFactoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F94B73622C47B1F00A8ACD1 /* BeastCharacterFactoryTest.swift */; };
+		0F94B73922C47BB000A8ACD1 /* HumanAlienCharacterFactoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F94B73822C47BB000A8ACD1 /* HumanAlienCharacterFactoryTest.swift */; };
 		0FC6F0BB22C37A6F004BD928 /* MarvelOOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC6F0BA22C37A6F004BD928 /* MarvelOOTests.swift */; };
 		0FC6F0C122C37B33004BD928 /* BasicCharacterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC6F0C022C37B33004BD928 /* BasicCharacterTest.swift */; };
 		0FEEF05122C326B20035E27C /* GameLoopHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEEF05022C326B20035E27C /* GameLoopHandler.swift */; };
@@ -162,6 +163,7 @@
 		0F94B73222C4764B00A8ACD1 /* HumanRadiatedCharacterFactoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanRadiatedCharacterFactoryTest.swift; sourceTree = "<group>"; };
 		0F94B73422C476EB00A8ACD1 /* AlienCharacterFactoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlienCharacterFactoryTest.swift; sourceTree = "<group>"; };
 		0F94B73622C47B1F00A8ACD1 /* BeastCharacterFactoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeastCharacterFactoryTest.swift; sourceTree = "<group>"; };
+		0F94B73822C47BB000A8ACD1 /* HumanAlienCharacterFactoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanAlienCharacterFactoryTest.swift; sourceTree = "<group>"; };
 		0FC6F0B822C37A6F004BD928 /* MarvelOOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarvelOOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FC6F0BA22C37A6F004BD928 /* MarvelOOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelOOTests.swift; sourceTree = "<group>"; };
 		0FC6F0BC22C37A6F004BD928 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 				0F94B73222C4764B00A8ACD1 /* HumanRadiatedCharacterFactoryTest.swift */,
 				0F94B73422C476EB00A8ACD1 /* AlienCharacterFactoryTest.swift */,
 				0F94B73622C47B1F00A8ACD1 /* BeastCharacterFactoryTest.swift */,
+				0F94B73822C47BB000A8ACD1 /* HumanAlienCharacterFactoryTest.swift */,
 			);
 			path = CharacterFactoryTests;
 			sourceTree = "<group>";
@@ -500,6 +503,7 @@
 				0F276DF222C387FA00793441 /* BeastAlienCharacterFactory.swift in Sources */,
 				0F276DE322C387E200793441 /* Handler.swift in Sources */,
 				0F276DE622C387EA00793441 /* HumanRadiatedCharacter.swift in Sources */,
+				0F94B73922C47BB000A8ACD1 /* HumanAlienCharacterFactoryTest.swift in Sources */,
 				0F276DE122C387DB00793441 /* SoloAction.swift in Sources */,
 				0F276DFD22C388A400793441 /* HumanCharacterTest.swift in Sources */,
 				0F276DF722C387FA00793441 /* GammaRadiated.swift in Sources */,
