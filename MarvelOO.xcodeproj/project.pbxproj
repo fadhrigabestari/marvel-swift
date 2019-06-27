@@ -91,6 +91,7 @@
 		0F43B56222BCFFFE001DE138 /* BeastAlienCharacterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F43B56122BCFFFE001DE138 /* BeastAlienCharacterFactory.swift */; };
 		0F43B56422BD001A001DE138 /* BasicCharacterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F43B56322BD001A001DE138 /* BasicCharacterFactory.swift */; };
 		0F8CEC4822C08511008685F5 /* MarvelGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8CEC4722C08511008685F5 /* MarvelGame.swift */; };
+		0F94B73322C4764B00A8ACD1 /* HumanRadiatedCharacterFactoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F94B73222C4764B00A8ACD1 /* HumanRadiatedCharacterFactoryTest.swift */; };
 		0FC6F0BB22C37A6F004BD928 /* MarvelOOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC6F0BA22C37A6F004BD928 /* MarvelOOTests.swift */; };
 		0FC6F0C122C37B33004BD928 /* BasicCharacterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC6F0C022C37B33004BD928 /* BasicCharacterTest.swift */; };
 		0FEEF05122C326B20035E27C /* GameLoopHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEEF05022C326B20035E27C /* GameLoopHandler.swift */; };
@@ -156,6 +157,7 @@
 		0F43B56122BCFFFE001DE138 /* BeastAlienCharacterFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeastAlienCharacterFactory.swift; sourceTree = "<group>"; };
 		0F43B56322BD001A001DE138 /* BasicCharacterFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCharacterFactory.swift; sourceTree = "<group>"; };
 		0F8CEC4722C08511008685F5 /* MarvelGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelGame.swift; sourceTree = "<group>"; };
+		0F94B73222C4764B00A8ACD1 /* HumanRadiatedCharacterFactoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanRadiatedCharacterFactoryTest.swift; sourceTree = "<group>"; };
 		0FC6F0B822C37A6F004BD928 /* MarvelOOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarvelOOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FC6F0BA22C37A6F004BD928 /* MarvelOOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelOOTests.swift; sourceTree = "<group>"; };
 		0FC6F0BC22C37A6F004BD928 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				0F276E0B22C46D0000793441 /* HumanCharacterFactoryTest.swift */,
+				0F94B73222C4764B00A8ACD1 /* HumanRadiatedCharacterFactoryTest.swift */,
 			);
 			path = CharacterFactoryTests;
 			sourceTree = "<group>";
@@ -512,6 +515,7 @@
 				0F276DED22C387FA00793441 /* HumanRadiatedCharacterFactory.swift in Sources */,
 				0F276DEB22C387FA00793441 /* CharacterFactory.swift in Sources */,
 				0F276DDF22C387D500793441 /* GameLoopHandler.swift in Sources */,
+				0F94B73322C4764B00A8ACD1 /* HumanRadiatedCharacterFactoryTest.swift in Sources */,
 				0F276DEC22C387FA00793441 /* HumanCharacterFactory.swift in Sources */,
 				0F276DDE22C387D200793441 /* GameSetupHandler.swift in Sources */,
 				0F276DD822C387C500793441 /* AttackAction.swift in Sources */,
