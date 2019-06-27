@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import MarvelOO
 
 class HumanRadiatedCharacterFactoryTest: XCTestCase {
     
@@ -24,8 +25,8 @@ class HumanRadiatedCharacterFactoryTest: XCTestCase {
         factory = nil
     }
 
-    func shouldManufacture() {
+    func testManufacture() {
         let character = factory.manufacture()
-        XCTAssert(character === HumanRadiatedCharacter(name: "fadh", description: "wa", radiationLevel: 10))
+        XCTAssert(character is HumanRadiatedCharacter)
     }
 }

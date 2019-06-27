@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import MarvelOO
 
 class HumanCharacterTest: XCTestCase {
     
@@ -22,7 +23,7 @@ class HumanCharacterTest: XCTestCase {
         character = nil
     }
 
-    func shouldHumanize() {
+    func testHumanize() {
         XCTAssertEqual(character.abilities[0], "Human")
     }
 }

@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import MarvelOO
 
 class HumanRadiatedCharacterTest: XCTestCase {
     
@@ -24,7 +25,7 @@ class HumanRadiatedCharacterTest: XCTestCase {
         character = nil
     }
     
-    func shouldRadiate() {
+    func testRadiate() {
         XCTAssertEqual(character.health, 120)
         XCTAssertEqual(character.damage, 30)
         XCTAssertEqual(character.abilities[0], "Gamma radiated")
