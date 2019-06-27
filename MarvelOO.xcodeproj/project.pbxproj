@@ -16,7 +16,7 @@
 		0F276DD922C387C700793441 /* StatusAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F43B54622BCE666001DE138 /* StatusAction.swift */; };
 		0F276DDA22C387C900793441 /* NoAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F43B54822BCE68D001DE138 /* NoAction.swift */; };
 		0F276DDB22C387CB00793441 /* Printer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F43B54022BCE258001DE138 /* Printer.swift */; };
-		0F276DDC22C387CE00793441 /* InputManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F43B53E22BCE1E9001DE138 /* InputManager.swift */; };
+		0F276DDC22C387CE00793441 /* CommandLineInputManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F43B53E22BCE1E9001DE138 /* CommandLineInputManager.swift */; };
 		0F276DDD22C387D000793441 /* GameHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F43B53C22BCE16A001DE138 /* GameHandler.swift */; };
 		0F276DDE22C387D200793441 /* GameSetupHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEEF05222C326CE0035E27C /* GameSetupHandler.swift */; };
 		0F276DDF22C387D500793441 /* GameLoopHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FEEF05022C326B20035E27C /* GameLoopHandler.swift */; };
@@ -72,7 +72,7 @@
 		0F37737C22BCD810002D7700 /* CharacterConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F37737B22BCD810002D7700 /* CharacterConstants.swift */; };
 		0F37737E22BCDAD8002D7700 /* Human+BeastCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F37737D22BCDAD8002D7700 /* Human+BeastCharacter.swift */; };
 		0F43B53D22BCE16A001DE138 /* GameHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F43B53C22BCE16A001DE138 /* GameHandler.swift */; };
-		0F43B53F22BCE1E9001DE138 /* InputManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F43B53E22BCE1E9001DE138 /* InputManager.swift */; };
+		0F43B53F22BCE1E9001DE138 /* CommandLineInputManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F43B53E22BCE1E9001DE138 /* CommandLineInputManager.swift */; };
 		0F43B54122BCE258001DE138 /* Printer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F43B54022BCE258001DE138 /* Printer.swift */; };
 		0F43B54322BCE2EF001DE138 /* Handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F43B54222BCE2EF001DE138 /* Handler.swift */; };
 		0F43B54522BCE4D7001DE138 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F43B54422BCE4D7001DE138 /* Action.swift */; };
@@ -149,7 +149,7 @@
 		0F37737B22BCD810002D7700 /* CharacterConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterConstants.swift; sourceTree = "<group>"; };
 		0F37737D22BCDAD8002D7700 /* Human+BeastCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Human+BeastCharacter.swift"; sourceTree = "<group>"; };
 		0F43B53C22BCE16A001DE138 /* GameHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameHandler.swift; sourceTree = "<group>"; };
-		0F43B53E22BCE1E9001DE138 /* InputManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputManager.swift; sourceTree = "<group>"; };
+		0F43B53E22BCE1E9001DE138 /* CommandLineInputManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandLineInputManager.swift; sourceTree = "<group>"; };
 		0F43B54022BCE258001DE138 /* Printer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Printer.swift; sourceTree = "<group>"; };
 		0F43B54222BCE2EF001DE138 /* Handler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Handler.swift; sourceTree = "<group>"; };
 		0F43B54422BCE4D7001DE138 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
@@ -318,7 +318,7 @@
 			isa = PBXGroup;
 			children = (
 				0F43B53C22BCE16A001DE138 /* GameHandler.swift */,
-				0F43B53E22BCE1E9001DE138 /* InputManager.swift */,
+				0F43B53E22BCE1E9001DE138 /* CommandLineInputManager.swift */,
 				0F43B54022BCE258001DE138 /* Printer.swift */,
 				0F43B54822BCE68D001DE138 /* NoAction.swift */,
 				0F43B54622BCE666001DE138 /* StatusAction.swift */,
@@ -504,7 +504,7 @@
 				0F43B55322BCFDD2001DE138 /* CharacterFactory.swift in Sources */,
 				0F43B54322BCE2EF001DE138 /* Handler.swift in Sources */,
 				0FEEF05122C326B20035E27C /* GameLoopHandler.swift in Sources */,
-				0F43B53F22BCE1E9001DE138 /* InputManager.swift in Sources */,
+				0F43B53F22BCE1E9001DE138 /* CommandLineInputManager.swift in Sources */,
 				0F37735F22BCC200002D7700 /* Character.swift in Sources */,
 				0F37736522BCC493002D7700 /* GammaRadiated.swift in Sources */,
 				0F37737C22BCD810002D7700 /* CharacterConstants.swift in Sources */,
@@ -535,7 +535,7 @@
 				0F276DE822C387EA00793441 /* BeastCharacter.swift in Sources */,
 				0F276DF422C387FA00793441 /* Character.swift in Sources */,
 				0F276DD722C387BD00793441 /* Human+BeastCharacter.swift in Sources */,
-				0F276DDC22C387CE00793441 /* InputManager.swift in Sources */,
+				0F276DDC22C387CE00793441 /* CommandLineInputManager.swift in Sources */,
 				0F276DD522C387B800793441 /* CharacterConstants.swift in Sources */,
 				0F276DDA22C387C900793441 /* NoAction.swift in Sources */,
 				0F276DD622C387BA00793441 /* Beast+AlienCharacter.swift in Sources */,

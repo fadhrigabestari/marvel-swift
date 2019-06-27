@@ -42,35 +42,35 @@ extension CharacterFactory {
     }
     
     func manufactureName() -> String {
-        let inputManager = InputManager()
+        let inputManager = CommandLineInputManager()
         
         print("Insert the name of your character:")
         return inputManager.getInputString()
     }
     
     func manufactureDescription() -> String {
-        let inputManager = InputManager()
+        let inputManager = CommandLineInputManager()
         
         print("Add a description for your character:")
         return inputManager.getInputString()
     }
     
     func manufactureRadiationLevel() -> Int {
-        let inputManager = InputManager()
+        let inputManager = CommandLineInputManager()
         
         print("Input the radiation level of your character:")
         return inputManager.getInputInt()
     }
     
     func manufactureSpecies() -> String {
-        let inputManager = InputManager()
+        let inputManager = CommandLineInputManager()
         
         print("Insert the type of beast can your character be considered as:")
         return inputManager.getInputString()
     }
     
     func manufactureOrigin() -> String {
-        let inputManager = InputManager()
+        let inputManager = CommandLineInputManager()
         
         print("Input the planet of origin for your character")
         return inputManager.getInputString()

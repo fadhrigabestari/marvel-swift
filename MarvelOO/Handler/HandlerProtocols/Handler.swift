@@ -10,6 +10,6 @@ import Foundation
 
 protocol Handler {
     // MARK: INTERFACE SEGREGATION PRINCIPLE
-    var inputManager: InputManager {get set}
+    var inputManager: CommandLineInputManager {get set}
     var printer: Printer {get set}
 }

@@ -9,7 +9,7 @@
 import Foundation
 
 // Game setup
-let gameHandler = GameHandler(inputManager: InputManager(),
+let gameHandler = GameHandler(inputManager: CommandLineInputManager(),
                           printer: Printer(),
                           factory: BasicCharacterFactory(),
                           action: NoAction(printer: Printer()))
