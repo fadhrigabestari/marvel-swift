@@ -15,7 +15,7 @@ class BasicCharacterFactoryTest: XCTestCase {
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
         super.setUp()
-        factory = BasicCharacterFactory()
+        factory = BasicCharacterFactory(inputManager: MockFileInputManager(file: "inputManagerTest"))
     }
 
     override func tearDown() {

@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct HumanAlienCharacterFactory: AlienProtocolFactory {
+struct HumanAlienCharacterFactory: CharacterFactory, AlienProtocolFactory {
     var inputManager: InputManager
     
     func manufacture() -> Character {

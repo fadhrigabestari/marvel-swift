@@ -99,6 +99,9 @@
 		0F4D70E022CC87000019EF9E /* BeastProtocolFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4D70DF22CC87000019EF9E /* BeastProtocolFactory.swift */; };
 		0F4D70E222CC870E0019EF9E /* AlienProtocolFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4D70E122CC870E0019EF9E /* AlienProtocolFactory.swift */; };
 		0F4D70E422CC87AE0019EF9E /* RadiatedProtocolFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4D70E322CC87AE0019EF9E /* RadiatedProtocolFactory.swift */; };
+		0F4D70E522CC8BBB0019EF9E /* RadiatedProtocolFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4D70E322CC87AE0019EF9E /* RadiatedProtocolFactory.swift */; };
+		0F4D70E622CC8BBE0019EF9E /* BeastProtocolFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4D70DF22CC87000019EF9E /* BeastProtocolFactory.swift */; };
+		0F4D70E722CC8BC00019EF9E /* AlienProtocolFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4D70E122CC870E0019EF9E /* AlienProtocolFactory.swift */; };
 		0F8CEC4822C08511008685F5 /* MarvelGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8CEC4722C08511008685F5 /* MarvelGame.swift */; };
 		0F90414922C4879B005498FA /* InputManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F90414822C4879B005498FA /* InputManager.swift */; };
 		0F90F93722C47C9E00ECC652 /* HumanBeastCharacterFactoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F90F93622C47C9E00ECC652 /* HumanBeastCharacterFactoryTest.swift */; };
@@ -598,6 +601,7 @@
 				0F276DE322C387E200793441 /* Handler.swift in Sources */,
 				0F276DE622C387EA00793441 /* HumanRadiatedCharacter.swift in Sources */,
 				0F94B73922C47BB000A8ACD1 /* HumanAlienCharacterFactoryTest.swift in Sources */,
+				0F4D70E722CC8BC00019EF9E /* AlienProtocolFactory.swift in Sources */,
 				0F276DE122C387DB00793441 /* SoloAction.swift in Sources */,
 				0F276DFD22C388A400793441 /* HumanCharacterTest.swift in Sources */,
 				0F4D70D322C497390019EF9E /* InputManagerTest.swift in Sources */,
@@ -621,6 +625,7 @@
 				0F276DDD22C387D000793441 /* GameHandler.swift in Sources */,
 				0F90F94722C483F700ECC652 /* StatusActionTest.swift in Sources */,
 				0F276DD422C3878100793441 /* main.swift in Sources */,
+				0F4D70E622CC8BBE0019EF9E /* BeastProtocolFactory.swift in Sources */,
 				0F276DFA22C387FA00793441 /* Human.swift in Sources */,
 				0F276DED22C387FA00793441 /* HumanRadiatedCharacterFactory.swift in Sources */,
 				0F276DEB22C387FA00793441 /* CharacterFactory.swift in Sources */,
@@ -645,6 +650,7 @@
 				0F276DE022C387D900793441 /* DuoAction.swift in Sources */,
 				0F94B73722C47B1F00A8ACD1 /* BeastCharacterFactoryTest.swift in Sources */,
 				0F276E0322C38DA600793441 /* BeastCharacterTest.swift in Sources */,
+				0F4D70E522CC8BBB0019EF9E /* RadiatedProtocolFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

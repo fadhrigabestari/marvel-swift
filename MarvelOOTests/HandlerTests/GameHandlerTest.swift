@@ -17,7 +17,7 @@ class GameHandlerTest: XCTestCase {
         super.setUp()
         handler = GameHandler(inputManager: MockFileInputManager(file: "inputManagerTest"),
                               printer: Printer(),
-                              factory: BasicCharacterFactory(),
+                              factory: BasicCharacterFactory(inputManager: MockFileInputManager(file: "inputManagerTest")),
                               action: NoAction(printer: Printer()))
     }
 

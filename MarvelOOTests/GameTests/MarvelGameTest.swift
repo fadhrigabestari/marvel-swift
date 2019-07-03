@@ -18,7 +18,7 @@ class MarvelGameTest: XCTestCase {
         super.setUp()
         let gameHandler = GameHandler(inputManager: MockFileInputManager(file: "inputManagerTest"),
                                       printer: Printer(),
-                                      factory: BasicCharacterFactory(),
+                                      factory: BasicCharacterFactory(inputManager: MockFileInputManager(file: "inputManagerTest")),
                                       action: NoAction(printer: Printer()))
         let isPlayerOneTurn = true
         let isGameOver = false

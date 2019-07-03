@@ -24,7 +24,7 @@ class GameHandler: Handler, GameSetupHandler, GameLoopHandler {
     }
     
     func handleInputInSetup(input: Int) -> Character {
-        factory = factory.determineFactory(inputManager: CommandLineInputManager(), option: input)
+        factory = factory.determineFactory(inputManager: inputManager, option: input)
         
         return factory.manufacture()
     }

@@ -19,7 +19,8 @@ class MockFileInputManager: InputManager {
         if let url = Bundle(for: type(of: self)).url(forResource: file, withExtension: "txt") {
             do {
                 let contents = try String(contentsOf: url)
-                return contents
+                 let trimmedContents = contents.trimmingCharacters(in: .whitespacesAndNewlines)
+                return trimmedContents
             } catch let error {
                 print(error)
             }

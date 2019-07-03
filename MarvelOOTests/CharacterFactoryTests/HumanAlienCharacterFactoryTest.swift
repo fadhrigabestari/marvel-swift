@@ -16,7 +16,7 @@ class HumanAlienCharacterFactoryTest: XCTestCase {
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
         super.setUp()
-        factory = HumanAlienCharacterFactory()
+        factory = HumanAlienCharacterFactory(inputManager: MockFileInputManager(file: "inputManagerTest"))
     }
 
     override func tearDown() {
@@ -28,5 +28,7 @@ class HumanAlienCharacterFactoryTest: XCTestCase {
     func testManufacture() {
         let character = factory.manufacture()
         XCTAssert(character is HumanAlienCharacter)
+        XCTAssertEqual(character.abilities[1], "Half-human")
+        XCTAssertEqual(character.abilities[0], "Half-alien")
     }
 }

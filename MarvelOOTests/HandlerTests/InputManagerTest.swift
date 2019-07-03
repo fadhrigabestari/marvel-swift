@@ -27,7 +27,7 @@ class InputManagerTest: XCTestCase {
     func testGetInputString() {
         inputManager = MockFileInputManager(file: "inputManagerTest")
         let result = inputManager.getInputString()
-        XCTAssertEqual(result, "test\n")
+        XCTAssertEqual(result, "test")
     }
     
     func testGetInputInt() {
