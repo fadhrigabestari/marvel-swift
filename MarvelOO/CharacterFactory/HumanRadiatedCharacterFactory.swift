@@ -8,7 +8,9 @@
 
 import Foundation
 
-struct HumanRadiatedCharacterFactory: CharacterFactory {
+struct HumanRadiatedCharacterFactory: RadiatedProtocolFactory {
+    var inputManager: InputManager
+    
     func manufacture() -> Character {
         let name = manufactureName()
         let description = manufactureDescription()

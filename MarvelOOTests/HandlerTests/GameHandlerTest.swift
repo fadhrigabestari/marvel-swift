@@ -15,7 +15,7 @@ class GameHandlerTest: XCTestCase {
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
         super.setUp()
-        handler = GameHandler(inputManager: InputManager(),
+        handler = GameHandler(inputManager: MockFileInputManager(file: "inputManagerTest"),
                               printer: Printer(),
                               factory: BasicCharacterFactory(),
                               action: NoAction(printer: Printer()))

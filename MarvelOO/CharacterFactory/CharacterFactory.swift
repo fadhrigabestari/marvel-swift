@@ -10,69 +10,42 @@ import Foundation
 
 // MARK: BUILDER X FACTORY PATTERN
 protocol CharacterFactory {
-    func determineFactory(option: Int) -> CharacterFactory
+    var inputManager: InputManager {get set}
+    func determineFactory(inputManager: InputManager, option: Int) -> CharacterFactory
     func manufacture() -> Character
     func manufactureName() -> String
     func manufactureDescription() -> String
-    func manufactureRadiationLevel() -> Int
-    func manufactureSpecies() -> String
-    func manufactureOrigin() -> String
 }
 
 extension CharacterFactory {
-    func determineFactory(option: Int) -> CharacterFactory {
+    func determineFactory(inputManager: InputManager, option: Int) -> CharacterFactory {
         switch option {
         case 1:
-            return HumanCharacterFactory()
+            return HumanCharacterFactory(inputManager: inputManager)
         case 2:
-            return HumanRadiatedCharacterFactory()
+            return HumanRadiatedCharacterFactory(inputManager: inputManager)
         case 3:
-            return AlienCharacterFactory()
+            return AlienCharacterFactory(inputManager: inputManager)
         case 4:
-            return BeastCharacterFactory()
+            return BeastCharacterFactory(inputManager: inputManager)
         case 5:
-            return HumanAlienCharacterFactory()
+            return HumanAlienCharacterFactory(inputManager: inputManager)
         case 6:
-            return HumanBeastCharacterFactory()
+            return HumanBeastCharacterFactory(inputManager: inputManager)
         case 7:
-            return BeastAlienCharacterFactory()
+            return BeastAlienCharacterFactory(inputManager: inputManager)
         default:
-            return BasicCharacterFactory()
+            return BasicCharacterFactory(inputManager: inputManager)
         }
     }
     
     func manufactureName() -> String {
-        let inputManager = CommandLineInputManager()
-        
         print("Insert the name of your character:")
         return inputManager.getInputString()
     }
     
     func manufactureDescription() -> String {
-        let inputManager = CommandLineInputManager()
-        
         print("Add a description for your character:")
-        return inputManager.getInputString()
-    }
-    
-    func manufactureRadiationLevel() -> Int {
-        let inputManager = CommandLineInputManager()
-        
-        print("Input the radiation level of your character:")
-        return inputManager.getInputInt()
-    }
-    
-    func manufactureSpecies() -> String {
-        let inputManager = CommandLineInputManager()
-        
-        print("Insert the type of beast can your character be considered as:")
-        return inputManager.getInputString()
-    }
-    
-    func manufactureOrigin() -> String {
-        let inputManager = CommandLineInputManager()
-        
-        print("Input the planet of origin for your character")
         return inputManager.getInputString()
     }
 }

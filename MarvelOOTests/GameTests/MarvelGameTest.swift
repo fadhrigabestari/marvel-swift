@@ -16,7 +16,7 @@ class MarvelGameTest: XCTestCase {
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
         super.setUp()
-        let gameHandler = GameHandler(inputManager: InputManager(),
+        let gameHandler = GameHandler(inputManager: MockFileInputManager(file: "inputManagerTest"),
                                       printer: Printer(),
                                       factory: BasicCharacterFactory(),
                                       action: NoAction(printer: Printer()))
@@ -31,5 +31,5 @@ class MarvelGameTest: XCTestCase {
         game = nil
     }
     
-    //how to test?
+    // testing main?
 }

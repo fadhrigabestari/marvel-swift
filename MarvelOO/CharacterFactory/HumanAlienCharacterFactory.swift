@@ -8,7 +8,9 @@
 
 import Foundation
 
-struct HumanAlienCharacterFactory: CharacterFactory {
+struct HumanAlienCharacterFactory: AlienProtocolFactory {
+    var inputManager: InputManager
+    
     func manufacture() -> Character {
         let name = manufactureName()
         let description = manufactureDescription()

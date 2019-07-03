@@ -11,7 +11,7 @@ import Foundation
 // Game setup
 let gameHandler = GameHandler(inputManager: CommandLineInputManager(),
                           printer: Printer(),
-                          factory: BasicCharacterFactory(),
+                          factory: BasicCharacterFactory(inputManager: CommandLineInputManager()),
                           action: NoAction(printer: Printer()))
 let isPlayerOneTurn = true
 let isGameOver = false

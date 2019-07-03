@@ -54,7 +54,7 @@ class MarvelGame {
         announceTurn()
         handler.printer.printCharacterCreation()
         let input = handler.inputManager.getInputInt()
-        handler.factory = handler.factory.determineFactory(option: input)
+        handler.factory = handler.factory.determineFactory(inputManager: CommandLineInputManager(), option: input)
         let character = handler.factory.manufacture()
         reverseTurn()
         

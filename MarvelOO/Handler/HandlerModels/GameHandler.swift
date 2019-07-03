@@ -9,14 +9,14 @@
 import Foundation
 
 class GameHandler: Handler, GameSetupHandler, GameLoopHandler {
-    var inputManager: CommandLineInputManager
+    var inputManager: InputManager
     var printer: Printer
     
     var factory: CharacterFactory
     var action: Action
     
     // MARK: DEPENDENCY INVERSIONS PRINCIPLE
-    init(inputManager: CommandLineInputManager, printer: Printer, factory: CharacterFactory, action: NoAction) {
+    init(inputManager: InputManager, printer: Printer, factory: CharacterFactory, action: NoAction) {
         self.inputManager = inputManager
         self.printer = printer
         self.factory = factory
@@ -24,7 +24,7 @@ class GameHandler: Handler, GameSetupHandler, GameLoopHandler {
     }
     
     func handleInputInSetup(input: Int) -> Character {
-        factory = factory.determineFactory(option: input)
+        factory = factory.determineFactory(inputManager: CommandLineInputManager(), option: input)
         
         return factory.manufacture()
     }

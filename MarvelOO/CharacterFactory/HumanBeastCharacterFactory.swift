@@ -8,7 +8,14 @@
 
 import Foundation
 
-struct HumanBeastCharacterFactory: CharacterFactory {
+struct HumanBeastCharacterFactory: BeastProtocolFactory {
+    var inputManager: InputManager
+    
+    func manufactureSpecies() -> String {
+        print("Insert the type of beast can your character be considered as:")
+        return inputManager.getInputString()
+    }
+    
     func manufacture() -> Character {
         let name = manufactureName()
         let description = manufactureDescription()

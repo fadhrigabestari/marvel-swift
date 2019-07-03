@@ -9,6 +9,8 @@
 import Foundation
 
 struct BasicCharacterFactory: CharacterFactory {
+    var inputManager: InputManager
+    
     func manufacture() -> Character {
         let name = manufactureName()
         let description = manufactureDescription()

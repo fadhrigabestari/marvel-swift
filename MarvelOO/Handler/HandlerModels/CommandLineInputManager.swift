@@ -9,7 +9,7 @@
 import Foundation
 
 // MARK: SINGLE RESPONSIBILITY PRINCIPLE
-struct CommandLineInputManager {
+struct CommandLineInputManager: InputManager {
     func getInputString() -> String {
         let line = readLine()
         if let input = line {
