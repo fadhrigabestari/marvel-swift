@@ -64,6 +64,11 @@ struct Printer {
     func printGameLoop() {
         print("Choose what your character's next action")
         print("'status' to check on your character's status")
+        print("'quit' to quit the game")
         print("'attack' to attack the other player")
+    }
+    
+    func printQuit(by character: Character) {
+        print("\(character.name) quit the game!")
     }
 }

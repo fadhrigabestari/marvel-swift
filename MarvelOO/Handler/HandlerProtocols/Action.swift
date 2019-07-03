@@ -21,6 +21,8 @@ extension Action {
         switch action {
         case "status":
             return StatusAction(printer: printer)
+        case "quit":
+            return QuitAction(printer: printer)
         case "attack":
             return AttackAction(printer: printer)
         default:
